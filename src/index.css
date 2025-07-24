@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+	background-color: #2B204C;
+}
+
+.becomeAPartner {
+  	position: relative;
+  	line-height: 18px;
+  	font-weight: 600;
+}
+.btn {
+  	position: relative;
+  	box-shadow: 0px 36px 72px rgba(247, 70, 169, 0.24);
+  	border-radius: 10px;
+  	background-color: #2b204c;
+  	border: 2px solid #ca5295;
+  	box-sizing: border-box;
+  	width: 100%;
+  	height: 64px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 22px 30px;
+  	text-align: left;
+  	font-size: 18px;
+  	color: #fff;
+  	font-family: Montserrat;
+}
+
+
+/* In your src/index.css */
+
+/* Style for each individual pagination dot */
+.experts-carousel-pagination .swiper-pagination-bullet {
+  /* Changed bg-white/40 to bg-white */
+  @apply w-2.5 h-2.5 bg-white border rounded-full opacity-50 transition-all duration-300;
+}
+
+/* Style for the active pagination dot */
+.experts-carousel-pagination .swiper-pagination-bullet-active {
+  /* Make the active dot fully opaque and wider */
+  @apply opacity-100 w-4;
+}
