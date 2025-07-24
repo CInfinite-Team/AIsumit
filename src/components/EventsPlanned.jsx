@@ -5,52 +5,107 @@ const days = ["Day 1", "Day 2", "Day 3"];
 const events = {
   "Day 1": [
     {
-      time: "9:15am - 10:30am",
-      title: "AI Hack Opening",
-      description: "Kickoff with exciting announcements and team formations.",
+      time: "1:00pm - 3:00pm",
+      title: "Opening Ceremony, Use Case Announcement & Team Formation",
+      description: "Event kickoff with welcome remarks, a keynote address, and team formation.",
       highlights: [
-        "Opening Ceremony",
-        "Team Formation",
-        "Intro to Hackathon Themes",
+        "Welcome remarks",
+        "Introduction to hackathon goals, tracks, & prizes",
+        "Keynote address by an AI industry leader",
       ],
     },
     {
-      time: "11:00am - 12:00pm",
-      title: "ML Workshop",
-      description: "Learn ML basics from industry experts.",
-      highlights: ["Hands-on session", "Q&A", "Live Coding"],
+      time: "4:00pm - 6:00pm",
+      title: "AI Hackathon Starts",
+      description: "Teams begin the ideation and prototyping phase with mentorship.",
+      highlights: [
+        "Teams begin ideation and prototyping",
+        "Initial mentorship sessions available",
+      ],
+    },
+    {
+      time: "4:30pm - 5:30pm",
+      title: "Workshops & Networking",
+      description: "Technical workshops and an ice-breaking networking event.",
+      highlights: [
+        "Introductory technical workshops (e.g., AI/ML tools, APIs)",
+        "Ice-breaking networking event",
+      ],
     },
   ],
   "Day 2": [
     {
       time: "10:00am - 12:00pm",
-      title: "Hackathon Ongoing",
-      description: "Teams continue building their solutions.",
+      title: "Workshops & Mentoring",
+      description: "Deep-dive technical sessions and specific guidance from domain experts.",
       highlights: [
-        "Mentorship Sessions",
-        "Real-Time Feedback",
-        "Check-In with Judges",
+        "Deep-dive technical sessions",
+        "Domain / Specific guidance from experts",
       ],
     },
     {
-      time: "1:00pm - 2:00pm",
-      title: "Lunch + Networking",
-      description: "Relax and connect with fellow participants.",
-      highlights: ["Food Stalls", "Networking Games", "Ice Breakers"],
+      time: "2:00pm - 6:00pm",
+      title: "AI Hackathon Continues, Networking & Team Collaboration",
+      description: "Continue hacking with check-ins, peer feedback, and collaboration.",
+      highlights: [
+        "Midpoint check-ins with mentors",
+        "Prototype development progress review",
+        "Peer feedback session",
+        "Cross-team collaboration opportunities",
+      ],
+    },
+    {
+      time: "6:00pm - 9:00pm",
+      title: "Workshops & Final Pitch Preparation, Dinner",
+      description: "Prepare for the final pitch with workshops and mentorship.",
+      highlights: ["Presentation skills workshop", "Pitch rehearsal with mentors"],
     },
   ],
   "Day 3": [
     {
-      time: "10:00am - 11:00am",
-      title: "Final Demos",
-      description: "Teams present their final projects to the jury.",
-      highlights: ["Demo Pitches", "Live Judging", "Audience Q&A"],
+      time: "9:00am - 10:00am",
+      title: "Registration & Networking Breakfast, Opening Remarks – AI CXO Summit",
+      description: "Kickoff for the AI CXO Summit with networking and opening remarks.",
+      highlights: [
+        "Welcome note from summit organizers",
+        "Overview of strategic objectives",
+      ],
     },
     {
-      time: "12:00pm - 1:00pm",
-      title: "Award Ceremony",
-      description: "Celebrate the winners and wrap up the event.",
-      highlights: ["Trophies & Goodies", "Closing Note", "Group Photos"],
+      time: "10:00am - 1:00pm",
+      title: "Keynote Speech, Panel Discussion, CXO Rountable",
+      description: "Insightful sessions including keynotes and panel discussions.",
+      highlights: [
+        "Topics, speakers and panelists to be discussed and determined",
+      ],
+    },
+    {
+        time: "2:00pm - 4:30pm",
+        title: "Keynote Speech, Panel Discussion, & CXO Rountable",
+        description: "Further sessions with keynotes and CXO roundtable discussions.",
+        highlights: [
+          "Topics, speakers and panelists to be discussed and determined",
+        ],
+      },
+    {
+      time: "3:00pm - 4:00pm",
+      title: "Final Hackathon Pitching Session",
+      description: "Top teams present their solutions to the judges.",
+      highlights: ["Top teams pitch their solutions to judges"],
+    },
+    {
+      time: "4:15pm - 4:30pm",
+      title: "Judging Deliberation & Closing Remarks",
+      description: "Judges finalize evaluations and the event concludes.",
+      highlights: [
+        "Concluding segment where judges discuss and finalize their evaluations",
+      ],
+    },
+    {
+      time: "5:00pm - 7:00pm",
+      title: "Award Ceremony & Prize Distribution, Closing Networking Reception - Dinner",
+      description: "Winners are announced and the event closes with a networking reception.",
+      highlights: ["Announce winners per use case", "Special recognition awards"],
     },
   ],
 };
@@ -62,7 +117,7 @@ export default function EventsPlanned() {
   return (
     <div className="px-4 py-32 bg-gradient-to-b from-[#25123D] to-[#1B0E2C] text-white font-sans">
       <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">
-        List Of Events Planned In this Conference
+        Qatar Edition Agenda
       </h1>
 
       {/* Tabs */}

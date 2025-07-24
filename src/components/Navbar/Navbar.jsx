@@ -40,11 +40,13 @@ function Navbar() {
           <a href="#">FAQ</a>
           
         </div>
-         <div className="hidden xl:inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
-            <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 rounded-md text-sm">
-              Become a Partner
-            </button>
-          </div>
+         <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
+            <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
+              <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+                Become a Partner
+              </button>
+            </div>
+          </a>
       </div>
      
 
@@ -57,11 +59,13 @@ function Navbar() {
           <a href="#">Experts</a>
           <a href="#">Partners</a>
           <a href="#">FAQ</a>
-          <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
-            <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 rounded-md text-sm">
-              Become a Partner
-            </button>
-          </div>
+          <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
+            <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
+              <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+                Become a Partner
+              </button>
+            </div>
+          </a>
         </div>
       )}
     </div>

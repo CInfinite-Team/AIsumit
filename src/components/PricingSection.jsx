@@ -23,11 +23,13 @@ const PricingSection = () => {
            <div className='absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10'>
              <h3 className="text-[5vw] md:text-2xl w-max font-bold mb-2 z-10">Join the Exclusive CXO Zone</h3>
             <p className="text-4xl font-bold mt-5 md:mt-10 z-10">$299</p>
-             <div className="inline-block mt-5 md:mt-10 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
-            <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
-              Get Your Pass
-            </button>
-          </div>
+             <a href="https://lu.ma/e7ghjzhz" target="_blank" rel="noopener noreferrer">
+                <div className="inline-block mt-5 md:mt-10 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
+                  <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
+                    Get Your Pass
+                  </button>
+                </div>
+              </a>
             </div>
             </div>
             <div className="text-left z-10 text-sm max-w-sm md:text-base space-y-2 mt-6 text-gray-200">
@@ -60,11 +62,13 @@ live demos.</span>
            <div className='absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10'>
              <h3 className="text-[5vw] md:text-2xl w-max font-bold mb-2 z-10">Showcase Your AI Solution</h3>
             <p className="text-4xl font-bold mt-5 md:mt-10 z-10">$999</p>
-            <div className="inline-block mt-5 md:mt-10 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
-            <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
-              Get Your Pass
-            </button>
-          </div>
+            <a href="https://lu.ma/9tzfhtbr" target="_blank" rel="noopener noreferrer">
+              <div className="inline-block mt-5 md:mt-10 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
+                <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
+                  Get Your Pass
+                </button>
+              </div>
+            </a>
             </div>
             </div>
             <div className="text-left z-10 text-sm max-w-sm md:text-base space-y-2 mt-6 text-gray-200">
