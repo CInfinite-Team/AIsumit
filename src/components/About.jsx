@@ -1,14 +1,14 @@
 import React from 'react';
 import AiIcon from '../assets/ai.svg'; 
 import HackIcon from '../assets/hack.svg';
-import RobotImage from '../assets/robot.png'; 
+import RobotImage from '../assets/robot.svg'; 
 import TickBullet from '../assets/TickBullet.svg'
 function About() {
   return (
-    <section className="w-full min-h-screen px-4 md:px-20 py-10 [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)] text-white flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-between">
+    <section className="w-full min-h-screen px-4 md:px-20 py-10 [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)] text-white flex flex-col xl:flex-row gap-10 lg:gap-20 items-center justify-between">
       
       
-      <div className="flex-1 order-2 lg:order-1 items-center lg:items-start flex flex-col gap-6 max-w-2xl">
+      <div className="flex-1 order-2 xl:order-1 items-center lg:items-start flex flex-col gap-6 max-w-2xl">
         
         <div className="flex gap-6">
           <div className="flex items-center gap-2 px-8 py-1 rounded-md border border-pink-500 bg-[#20113D]">
@@ -48,14 +48,12 @@ This is more than a hackathon—it's a launchpad for AI systems that are adaptiv
       </div>
 
       
-      <div className="flex-1 order-1 lg:order-2  relative">
-        <div className="p-[2px] rounded-2xl bg-gradient-to-tr from-pink-500 stroke-2 via-purple-500 to-pink-400 w-full max-w-md mx-auto" style={{
-       clipPath: 'polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%, 0 0)'
-     }}>
-          <div className="rounded-2xl  bg-[#130A2D] p-3">
+      <div className="flex-1 order-1 xl:order-2  relative">
+       
+          <div className="rounded-2xl max-w-lg  p-3">
             <img src={RobotImage} alt="AI Robot" className="rounded-xl object-cover w-full" />
           </div>
-        </div>
+        
       </div>
     </section>
   );
