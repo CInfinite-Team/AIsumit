@@ -14,7 +14,7 @@ import img11 from '../assets/Team/Dr-Hanan-El-Basha.webp'
 import img12 from '../assets/Team/Dr-Najwa.webp'
 import img13 from '../assets/Team/Dr-Salim-Al-Shuaili.webp'
 import img14 from '../assets/Team/Fatima-Tayeb.webp'
-// import img15 from '../assets/Team/Hussain-Sajjad-Ali-Al-Lawati.png'
+import img15 from '../assets/Team/Hussain-Sajjad-Ali-Al-Lawati.webp'
 import img16 from '../assets/Team/Nikita-Gordeev.webp'
 import img17 from '../assets/Team/Sanjay-Chawla.webp'
 import img18 from '../assets/Team/Thuraya-Al-Harthi.webp'
@@ -33,7 +33,7 @@ const experts = [
   { name: 'Michael James', company: 'Space X', imageUrl: img12},
   { name: 'Michael James', company: 'Space X', imageUrl: img13},
   { name: 'Michael James', company: 'Space X', imageUrl: img14},
-//   { name: 'Michael James', company: 'Space X', imageUrl: img15},
+  { name: 'Michael James', company: 'Space X', imageUrl: img15},
   { name: 'Michael James', company: 'Space X', imageUrl: img16},
   { name: 'Michael James', company: 'Space X', imageUrl: img17},
   { name: 'Michael James', company: 'Space X', imageUrl: img18},
