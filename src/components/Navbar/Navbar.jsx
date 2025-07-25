@@ -48,7 +48,7 @@ function Navbar() {
 
         
         <div className="hidden xl:flex gap-6 items-center justify">
-          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'about')}>About</a>
+          <a className='cursor-pointer' href='#about'>About</a>
           <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a>
           <a href="#Participate">Who can participate?</a>
           <a href="#Experts">Experts</a>
@@ -69,13 +69,13 @@ function Navbar() {
     
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 px-4 py-4 bg-[#1D1536] text-white xl:hidden">
-          <a href="#about">About</a>
-          <a href="#spotlight">AI Spotlight</a>
-          <a href="#Participate">Who can participate?</a>
-          <a href="#Experts">Experts</a>
-          <a href="#Partners">Partners</a>
-          <a href="#FAQ">FAQ</a>
-          <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
+          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
+          <a onClick={() => setMenuOpen(false)} href="#spotlight">AI Spotlight</a>
+          <a onClick={() => setMenuOpen(false)} href="#Participate">Who can participate?</a>
+          <a onClick={() => setMenuOpen(false)} href="#Experts">Experts</a>
+          <a onClick={() => setMenuOpen(false)} href="#Partners">Partners</a>
+          <a onClick={() => setMenuOpen(false)} href="#FAQ">FAQ</a>
+          <a onClick={() => setMenuOpen(false)} href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
             <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
               <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
                 Become a Partner

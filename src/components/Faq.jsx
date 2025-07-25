@@ -3,32 +3,56 @@ import React, { useState } from 'react';
 import question from '../assets/question.svg';
 const faqData = [
   {
-    question: 'How Do I Participate in this Challenge?',
-    answer: 'To enter the competition, you must fill out the online application form for your startup before the application deadline of 25th September 2025.',
+    question: 'How can I participate in the challenge?',
+    answer: 'To participate, you need to apply during the call for application phase. Applications are open to startups, coders, hustlers, designers, and innovators. Once your application is screened and accepted, you will be invited to join the hackathon either virtually or in person.',
   },
   {
     question: 'Who can apply?',
-    answer: 'The challenge is open to early-stage startups with a focus on AI-driven solutions. Your company must be less than 3 years old and have received less than $1M in funding.',
+    answer: 'The hackathon is open to individuals or teams of innovators, developers, designers, and entrepreneurs who are passionate about solving real-world business challenges using AI/ML technologies.',
   },
   {
     question: 'When can I apply?',
-    answer: 'The application portal opens on 1st August 2025 and closes on 25th September 2025 at 11:59 PM IST.',
+    answer: 'Applications typically open several weeks before the event. For this edition, the application process shall begin shortly, with the hackathon running across multiple countries in the GCC region.',
   },
   {
-    question: 'Is there a limit to the number of entries?',
-    answer: 'Each startup or team can submit only one application for the challenge. Multiple entries from the same entity will be disqualified.',
-  },
-  {
-    question: 'How do I know if my startup qualifies to apply?',
-    answer: 'Please review the "Eligibility Criteria" section on our official challenge page. If you still have questions, you can reach out to our support team.',
-  },
-  {
-    question: 'What stage should my startup be at to be considered?',
-    answer: 'We are looking for startups from the ideation stage to those with a minimum viable product (MVP). Both pre-seed and seed-stage startups are encouraged to apply.',
+    question: 'How do I know if I qualify to apply?',
+    answer: 'Eligibility criteria include having a strong interest in AI/ML, problem-solving skills, and the ability to collaborate effectively in a team. Initial screening will assess your qualifications based on the submitted application.',
   },
   {
     question: 'Is there any participation fee?',
-    answer: 'No, there is absolutely no fee to participate in this challenge. Our goal is to foster innovation, not to create barriers.',
+    answer: 'No, there is no participation fee. The AI Hackathon is free to join, and participants will have access to technology platforms, mentors, workshops, and other resources.',
+  },
+  {
+    question: 'Can Al Hackathon teams engage with the CXO Summit?',
+    answer: 'Yes, hackathon participants are encouraged to network and collaborate with CXO Summit attendees. This provides an opportunity to showcase solutions, gain industry insights, and explore potential partnerships.',
+  },
+  {
+    question: 'What happens after the hackathon?',
+    answer: 'Winning solutions from the hackathon are fast-tracked for enterprise adoption or pilot programs. Additionally, participants gain visibility, mentorship, and potential funding opportunities.',
+  },
+  {
+    question: 'Is there a separate application for the CXO Summit?',
+    answer: 'Yes, the CXO Summit has a separate registration process. Interested participants can register through the official website or contact the organizers for more details.',
+  },
+  {
+    question: 'How can I partner with the Al Hackathon or CXO Summit?',
+    answer: 'Partnerships are available for organizations looking to support the event through funding, use case contributions, or resource provision. To partner, reach out to the organizing team via email at info@risin.ventures or call +974 4465 4622.',
+  },
+  {
+    question: 'What are the benefits of attending the CXO Summit?',
+    answer: 'C-level engagements with top corporates, enterprises and government officials. Attendees will also gain access to inspiring keynotes, expert panels, hands-on workshops, and networking opportunities. The summit also offers a platform to explore innovative partnerships, enhance brand visibility, and engage with top talent.',
+  },
+  {
+    question: 'What is the format of the Al Hackathon?',
+    answer: 'The hackathon follows a hybrid format, combining virtual and in-person participation. Over two days, participants engage in intense coding, mentoring, training, and prototype development.',
+  },
+  {
+    question: 'Are there prizes for the winners?',
+    answer: 'Yes, the total cash prize will be announced in the application. Winning teams also receive mentorship, visibility, and opportunities for immediate adoption or pilots within enterprises.',
+  },
+  {
+    question: 'How can I stay updated about the event?',
+    answer: 'Follow our website and social media channels for announcements, schedules, and updates. You can also subscribe to the newsletter for regular updates.',
   },
 ];
 

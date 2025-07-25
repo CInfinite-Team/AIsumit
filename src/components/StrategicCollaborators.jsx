@@ -3,33 +3,46 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import AAMotors from '../assets/collab/AAMotors.png';
-import Alchemist from '../assets/collab/Alchemist.png';
-import HMC from '../assets/collab/HMC.png';
-import Kaic from '../assets/collab/Kaic.png';
-import Meeza from '../assets/collab/Meeza.png';
-import Ooredoo from '../assets/collab/Ooredoo.png';
-import OoredooFintech from '../assets/collab/OoredooFintech.png';
-import QMIC from '../assets/collab/QMIC.png';
-import Qualetics from '../assets/collab/Qualetics.png';
-
-const logos = [
-  { src: AAMotors, alt: 'KPMG' },
-  { src: Alchemist, alt: 'AWS' },
-  { src: HMC, alt: 'Microsoft' },
-  { src: Kaic, alt: 'Alteryx' },
-  { src: Meeza, alt: 'CODE' },
-  { src: Ooredoo, alt: 'Dataiku' },
-  { src: OoredooFintech, alt: 'Saudi Water Authority' },
-  { src: QMIC, alt: 'DTVC' },
-  { src: Qualetics, alt: 'Saudi Water Authority' },
-];
-
-const StrategicCollaborators = () => {
+// import AAMotors from '../assets/collab/AAMotors.png';
+// import Alchemist from '../assets/collab/Alchemist.png';
+// import HMC from '../assets/collab/HMC.png';
+// import Kaic from '../assets/collab/Kaic.png';
+// import Meeza from '../assets/collab/Meeza.png';
+// import Ooredoo from '../assets/collab/Ooredoo.png';
+// import OoredooFintech from '../assets/collab/OoredooFintech.png';
+// import QMIC from '../assets/collab/QMIC.png';
+// import Qualetics from '../assets/collab/Qualetics.png';
+// import SambaNova from '../assets/SambaNova.svg';
+// import AWS from '../assets/AWS.svg';
+// import Microsoft from '../assets/Microsoft.svg';
+// import Google from '../assets/Google.svg';
+// import Oracle from '../assets/Oracle.svg';
+// import IBM from '../assets/IBM.svg';
+//  const logos = [
+//   { src: SambaNova, alt: 'SambaNova' },
+//   { src: AWS, alt: 'AWS' },
+//   { src: Microsoft, alt: 'Microsoft' },
+//   { src: Google, alt: 'Google' },
+//   { src: Oracle, alt: 'Oracle' },
+//   { src: IBM, alt: 'IBM' },
+ 
+// ];
+// const logos = [
+//   { src: AAMotors, alt: 'KPMG' },
+//   { src: Alchemist, alt: 'AWS' },
+//   { src: HMC, alt: 'Microsoft' },
+//   { src: Kaic, alt: 'Alteryx' },
+//   { src: Meeza, alt: 'CODE' },
+//   { src: Ooredoo, alt: 'Dataiku' },
+//   { src: OoredooFintech, alt: 'Saudi Water Authority' },
+//   { src: QMIC, alt: 'DTVC' },
+//   { src: Qualetics, alt: 'Saudi Water Authority' },
+// ];
+const StrategicCollaborators = ({logos,title='OUR PARTNERS'}) => {
   return (
     <section id='Partners' className="w-full  text-white py-10">
       <div className="mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">OUR PARTNERS</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">{title}</h2>
         <p className="text-center inter text-sm md:text-base max-w-xl mx-auto mb-8">
           Our global partnerships with leading technology and data firms fuel our innovation and expand our reach.
         </p>
@@ -65,7 +78,7 @@ const StrategicCollaborators = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-32 object-contain opacity-90  hover:opacity-100 transition duration-300"
+                  className="h-20 aspect-video object-contain opacity-90  hover:opacity-100 transition duration-300"
                 />
               </SwiperSlide>
             ))}
