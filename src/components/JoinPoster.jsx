@@ -49,32 +49,25 @@ const JoinPoster = () => {
             </div>
 
             <div className="md:pb-6 mt-6 md:mt-0 w-full md:w-fit flex flex-col sm:flex-row gap-4 md:items-center">
-              <div className="inline-block w-full md:w-fit rounded-md overflow-hidden p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-                <button className="px-6 py-3 w-full md:w-fit rounded-md bg-[#2B204C] text-white font-semibold text-sm">
-                  Become a Partner
-                </button>
-              </div>
-<<<<<<< HEAD
+              
+
                <div className="mt-8 ml-auto w-full flex flex-col sm:flex-row gap-4">
-                 <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
-                  <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-                    <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+                 <a className='w-full md:w-fit' href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
+                  <div className="inline-block w-full rounded-md overflow-hidden md:w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
+                    <button className="px-6 py-3 w-full md:w-fit rounded-md bg-[#2B204C] text-white font-semibold text-sm">
                       Become a Partner
                     </button>
                   </div>
                 </a>
-                  <a href="https://forms.gle/zhRKvXVju4QgoUix9" target="_blank" rel="noopener noreferrer">
-                    <button className="font-semibold text-white border-2 border-white rounded-lg px-6 py-3 hover:bg-white/10 transition-colors duration-300 focus:outline-none">
+                  <a className='w-full md:w-fit' href="https://forms.gle/zhRKvXVju4QgoUix9" target="_blank" rel="noopener noreferrer">
+                    <button className="font-semibold text-white border-2 w-full md:w-fit border-white rounded-lg px-6 py-3 hover:bg-white/10 transition-colors duration-300 focus:outline-none">
                       Become a Sponsor
                     </button>
                   </a>
                 </div>
-=======
 
-              <button className="font-semibold text-white border-2 border-white rounded-lg px-6 py-3 hover:bg-white/10 transition-colors duration-300">
-                Become a Sponsor
-              </button>
->>>>>>> b44972ffcef528774bbdd1024a1112f6e7384b2f
+
+            
             </div>
           </div>
         </div>
