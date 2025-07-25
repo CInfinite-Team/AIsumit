@@ -60,7 +60,7 @@ const JoinPoster = () => {
                   </div>
                 </a>
                   <a className='w-full md:w-fit' href="https://forms.gle/zhRKvXVju4QgoUix9" target="_blank" rel="noopener noreferrer">
-                    <button className="font-semibold text-white border-2 w-full md:w-fit border-white rounded-lg px-6 py-3 hover:bg-white/10 transition-colors duration-300 focus:outline-none">
+                    <button className="text-sm font-semibold  text-white border-2 w-full md:w-fit border-white rounded-lg px-6 py-3 hover:bg-white/10 transition-colors duration-300 focus:outline-none">
                       Become a Sponsor
                     </button>
                   </a>

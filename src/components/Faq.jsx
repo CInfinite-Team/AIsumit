@@ -98,7 +98,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-[#2A2344] font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
+    <div id='FAQ' className="bg-[#2A2344] font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
       <div className="w-full max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white">FAQs</h2>

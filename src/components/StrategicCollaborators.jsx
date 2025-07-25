@@ -27,10 +27,10 @@ const logos = [
 
 const StrategicCollaborators = () => {
   return (
-    <section className="w-full  text-white py-10">
+    <section id='Partners' className="w-full  text-white py-10">
       <div className="mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">Our Partners</h2>
-        <p className="text-center text-sm md:text-base max-w-xl mx-auto mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">OUR PARTNERS</h2>
+        <p className="text-center inter text-sm md:text-base max-w-xl mx-auto mb-8">
           Our global partnerships with leading technology and data firms fuel our innovation and expand our reach.
         </p>
 
@@ -65,7 +65,7 @@ const StrategicCollaborators = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-32 object-contain opacity-90 hover:opacity-100 transition duration-300"
+                  className="h-32 object-contain opacity-90  hover:opacity-100 transition duration-300"
                 />
               </SwiperSlide>
             ))}

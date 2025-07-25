@@ -48,9 +48,9 @@ const CardWrapper = ({ children }) => (
 
 const WhoCanParticipate = () => {
   return (
-    <section className="text-white py-16 px-6 md:px-16 font-sans">
+    <section id='Participate' className="text-white py-16 px-6 md:px-16 font-sans">
       <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">WHO CAN PARTICIPATE?</h2>
-      <p className="text-center text-gray-300 max-w-3xl mx-auto mb-12 text-sm md:text-base">
+      <p className="text-center inter text-gray-300 max-w-3xl mx-auto mb-12 text-sm md:text-base">
         AI Hack is open to a diverse group of innovators who are eager to explore AI-driven solutions and push the boundaries of technology.
       </p>
 

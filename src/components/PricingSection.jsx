@@ -3,19 +3,19 @@ import PriceBg from '../assets/price-bg.svg';
 import GreenTick from '../assets/GreenTick.svg';
 const PricingSection = () => {
   return (
-    <section className="bg-gradient-to-b from-[#1B1036] to-[#2C1A4D] py-16 text-white">
+    <section id='pricing' className="bg-gradient-to-b from-[#1B1036] to-[#2C1A4D] py-16 text-white">
       <div className=" mx-auto px-4">
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
           WHY ATTEND AI SUMMIT?
         </h2>
-        <p className="text-center max-w-2xl mx-auto text-sm md:text-base text-gray-300 mb-12">
+        <p className="text-center inter max-w-2xl mx-auto text-sm md:text-base text-gray-300 mb-12">
           Join CXOs and AI partners in a focused space for innovation, live showcases, and strategic networking. Discover solutions, spark collaborations, and drive enterprise transformation—together.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-8">
           {/* Card 1 */}
           <div
-            className="bg-[#1B1332] p-4 rounded-xl w-fit flex flex-col items-center justify-center"
+            className="bg-[#1B1332] min-h-[700px] p-4 rounded-xl w-fit h-full flex flex-col items-center justify-start"
            
           >
             <div className='relative rounded-xl h-fit w-fit overflow-hidden  text-center'>
@@ -34,19 +34,15 @@ const PricingSection = () => {
             </div>
             <div className="text-left z-10 text-sm max-w-sm md:text-base space-y-2 mt-6 text-gray-200">
                 <h3 className="text-[5vw] md:text-2xl font-bold mb-2 text-center w-full text-[#CA5295] z-10">For CXO Delegates:</h3>
-                <p className='pb-2 text-sm'>Designed for strategic leaders and CXOs accelerating
-enterprise innovation regionally.</p>
+                <p className='pb-2 text-sm'>CXO Delegate & Partner Delegate ticket should be viewed in one screen view instead of scrolling.</p>
  <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Hear from AI experts tackling critical enterprise
-challenges.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Hear from AI experts tackling critical enterprise challenges in an exclusive collaboration zone.</span>
         </p>              
  <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Engage with peers through curated CXO roundtables,
-workshops, & panels.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Engage peers through curated CXO roundtables, workshops, and panels.</span>
         </p>              
  <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Explore handpicked innovation showcases &
-live demos.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Explore handpicked innovation showcases and live demos.</span>
         </p>              
             </div>
           </div>
@@ -54,7 +50,7 @@ live demos.</span>
 
           {/* Card 2 */}
           <div
-            className="bg-[#1B1332] min-h-[592px] p-4 rounded-xl w-fit flex flex-col items-center justify-center"
+            className="bg-[#1B1332] min-h-[700px] p-4 rounded-xl w-fit flex flex-col items-center justify-center"
            
           >
             <div className='relative rounded-xl h-fit w-fit overflow-hidden  text-center'>
@@ -73,19 +69,26 @@ live demos.</span>
             </div>
             <div className="text-left z-10 text-sm max-w-sm md:text-base space-y-2 mt-6 text-gray-200">
               <h3 className="text-[5vw] md:text-2xl text-center w-full font-bold mb-2 text-[#CA5295] z-10">For Partner Delegates:</h3>
-               <p className='pb-2 text-sm'>Designed for AI innovators to engage CXOs and turn
-exposure into real conversations.</p>
+               <p className='pb-2 text-sm'>Partner Delegate 
+	Designed for AI innovators to engage CXOs and turn exposure into real conversations.
+</p>
               <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Showcase your AI to top CXOs through live demos.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Showcase your AI in an exclusive CXO zone.</span>
         </p>       
               <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Lead strategic talks via roundtables & workshops.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Lead strategic dialogues with CXOs in exclusive sessions.</span>
         </p>       
               <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Connect with buyers through curated matchmaking.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Explore exclusive innovation showcases and demos.</span>
         </p>       
               <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
-         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Boost visibility in a high-intent CXO zone.</span>
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Present your offerings directly to decision-makers.</span>
+        </p>       
+              <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Get matched with enterprise clients ready to engage.</span>
+        </p>       
+              <p className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
+         <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" /> <span> Maximize brand visibility in a high-intent setting.</span>
         </p>       
             </div>
           </div>

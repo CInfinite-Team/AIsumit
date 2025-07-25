@@ -116,7 +116,7 @@ export default function EventsPlanned() {
 
   return (
     <div className="px-4 py-32 bg-gradient-to-b from-[#25123D] to-[#1B0E2C] text-white font-sans">
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">
+      <h1 className="text-2xl uppercase md:text-3xl font-bold text-center mb-6">
         Qatar Edition Agenda
       </h1>
 
@@ -148,7 +148,7 @@ export default function EventsPlanned() {
       <div className="flex flex-col md:flex-row justify-between bg-[#342D52] rounded-lg p-4 gap-4">
         <div className="md:w-2/3">
           <p className="flex items-center gap-2 text-pink-300 font-semibold mb-2">
-            <span className="text-lg">🕒</span> {event.time}
+             {event.time}
           </p>
           <h3 className="text-xl font-bold mb-1">{event.title}</h3>
           <p className="text-sm text-gray-300">{event.description}</p>
