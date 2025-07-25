@@ -135,7 +135,7 @@ const ExpertsLineup = () => {
               320: { slidesPerView: 1, spaceBetween: 10 },
               768: { slidesPerView: 3, spaceBetween: 20 },
               
-              1280: { slidesPerView: 5, spaceBetween: 30 },
+              1280: { slidesPerView: 3, spaceBetween: 30 },
             }}
           >
             {experts.map((expert, index) => (

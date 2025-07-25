@@ -85,9 +85,9 @@ const WhoCanParticipate = () => {
           </ul>
 
           <a href="https://forms.gle/drtYKddbPGHpgTF19" target="_blank" rel="noopener noreferrer">
-            <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
+            <div className="inline-block mb-3 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
               <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
-                Apply Now
+                Register Your Interest
               </button>
             </div>
           </a>
@@ -120,11 +120,13 @@ const WhoCanParticipate = () => {
               <span><strong>Investors & VCs:</strong> Scout top AI talent & emerging startups.</span>
             </li>
           </ul>
-          <div className="inline-block mb-4 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-            <button className="px-6 py-3  rounded-md bg-[#2B204C] text-white font-semibold text-sm">
-              Apply Now
-            </button>
-          </div>
+          <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
+            <div className="inline-block mb-3 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
+              <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+                Become a Partner
+              </button>
+            </div>
+          </a>
         </CardWrapper>
 
        

@@ -47,7 +47,9 @@ useEffect(() => {
       {/* Main Content */}
       <div className='flex flex-col xl:flex-row items-center justify-center  md:gap-10 lg:gap-20 w-full max-w-7xl 2xl:max-w-[70vw]'>
       <div className='flex flex-col order-2 xl:order-1 z-20 pt-10 md:pt-0 items-center xl:items-start w-full max-w-3xl   justify-center gap-6 text-white '>
-        <p className='font-medium text-xs md:text-xl  text-center  xl:text-left'>QATAR | 25TH - 27TH SEPTEMBER | QSTP, DOHA</p>
+        {location.pathname !== '/' && (
+          <p className='font-medium text-xs md:text-xl  text-center  xl:text-left'>QATAR | 25TH - 27TH SEPTEMBER | QSTP, DOHA</p>
+        )}
         <h1 className='text-[8vw] md:text-6xl xl:text-5xl 2xl:text-6xl font-bold text-center  xl:text-left leading-tight'>
           JOIN THE ULTIMATE<br />
           <span className='bg-gradient-to-r from-[#FF4E8E] to-[#A07CFF] bg-clip-text text-center  lg:text-left text-transparent'>AI SUMMIT</span>

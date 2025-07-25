@@ -10,8 +10,23 @@ import JoinPoster from '../components/JoinPoster'
 import Footer from '../components/Footer'
 import StrategicCollaborators from '../components/StrategicCollaborators'
 import BackToTopButton from '../components/BackToTopButton';
+import SambaNova from '../assets/SambaNova.svg';
+import AWS from '../assets/AWS.svg';
+import Microsoft from '../assets/Microsoft.svg';
+import Google from '../assets/Google.svg';
+import Oracle from '../assets/Oracle.svg';
+import IBM from '../assets/IBM.svg';
 
 function Home() {
+  const logos = [
+  { src: SambaNova, alt: 'SambaNova' },
+  { src: AWS, alt: 'AWS' },
+  { src: Microsoft, alt: 'Microsoft' },
+  { src: Google, alt: 'Google' },
+  { src: Oracle, alt: 'Oracle' },
+  { src: IBM, alt: 'IBM' },
+ 
+];
   return (
     <>
    <Navbar/>
@@ -20,7 +35,7 @@ function Home() {
    <AiSpotlight/>
    <WhoCanParticipate/>
    <ExpertLineUp/>
-   <StrategicCollaborators/>
+   <StrategicCollaborators logos={logos}/>
    <Faq/>
    <JoinPoster/>
    <Footer/>

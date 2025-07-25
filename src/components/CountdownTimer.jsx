@@ -115,7 +115,7 @@ const useFlip = (initialValue) => {
 
 
 
-const CountdownTimer = ({ targetDate = "2025-09-27T16:00:00Z" }) => {
+const CountdownTimer = ({ targetDate = "2025-09-25T16:00:00Z" }) => {
   
   const formatValue = (value) => String(value).padStart(2, "0");
 
