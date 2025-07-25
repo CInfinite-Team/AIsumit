@@ -9,6 +9,7 @@ import Faq from '../components/Faq'
 import JoinPoster from '../components/JoinPoster'
 import Footer from '../components/Footer'
 import StrategicCollaborators from '../components/StrategicCollaborators'
+import BackToTopButton from '../components/BackToTopButton';
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
    <Faq/>
    <JoinPoster/>
    <Footer/>
+   <BackToTopButton/>
    </>
   )
 }

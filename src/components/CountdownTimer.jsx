@@ -157,7 +157,7 @@ const CountdownTimer = ({ targetDate = "2025-09-27T16:00:00Z" }) => {
 
   return (
     <div className="bg-[#2b1c50]  flex items-center justify-center flex-col text-white font-sans py-20 p-4">
-        <h2 className="text-4xl font-bold mb-6">Time Remaining </h2>
+        <h2 className="text-4xl font-bold uppercase mb-6">Time Remaining </h2>
       <div className="flex items-center justify-center">
         {units.map((unit, index) => (
             <React.Fragment key={unit.label}>

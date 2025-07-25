@@ -2,21 +2,40 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Navigation, Pagination } from 'swiper/modules';
+import img1 from '../assets/Team/Abdallah-Abu-Sheikh.webp'
+import img2 from '../assets/Team/Amr-Metwally.webp'
+import img3 from '../assets/Team/Anuj-Gupta.webp'
+import img4 from '../assets/Team/Chris-Yeh.webp'
+import img5 from '../assets/Team/Debdulal-Dey.webp'
+import img6 from '../assets/Team/Dr-Ahmed-Elmagarmid.webp'
+import img7 from '../assets/Team/Dr-Ali-AlSanousi.webp'
+import img8 from '../assets/Team/Dr-Arpit-Yadav.webp'
+import img9 from '../assets/Team/Dr-Fatmah-Baothman.webp'
+import img10 from '../assets/Team/Dr-Fethi-Filali.webp'
+import img11 from '../assets/Team/Dr-Hanan-El-Basha.webp'
+import img12 from '../assets/Team/Dr-Najwa.webp'
+import img13 from '../assets/Team/Dr-Salim-Al-Shuaili.webp'
+import img14 from '../assets/Team/Fatima-Tayeb.webp'
+import img15 from '../assets/Team/Hussain-Sajjad-Ali-Al-Lawati.webp'
+import img16 from '../assets/Team/Nikita-Gordeev.webp'
+import img17 from '../assets/Team/Sanjay-Chawla.webp'
+import img18 from '../assets/Team/Thuraya-Al-Harthi.webp'
 
 
 const experts = [
-    { name: 'Tony Ross', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Olivia Emma', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Michael James', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Sophia Mia', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Ethan Leo', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Chloe Grace', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Tony Ross', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Olivia Emma', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Michael James', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Sophia Mia', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Ethan Leo', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'Chloe Grace', company: 'Space X', imageUrl: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+  { name: 'Amr Metwally', company: 'AED Director of Healthcare Innovation, Itqan Clinical Simulation & Innovation Center at Hamad Medical Corporation',Linkedinurl:'https://www.linkedin.com/in/amrmetwally/', imageUrl: img2 },
+  // { name: 'Michael James', company: 'Space X',Linkedinurl:'', imageUrl: img6},
+  { name: 'Dr. Ali AlSanousi', company: 'Executive Director Clinical Information Systems at Hamad Medical Corporation',Linkedinurl:'https://www.linkedin.com/in/sanousi/', imageUrl: img7},
+//   { name: 'Dr. Fatmah Baothman', company: 'Chairwoman at Global Genie Ai',Linkedinurl:'https://www.linkedin.com/in/dr-fatmah-baothman-b7680b16b/?originalSubdomain=sa', imageUrl: img9},
+  // { name: 'Michael James', company: 'Space X',Linkedinurl:'', imageUrl: img10},
+  { name: 'Dr. Hanan El Basha', company: 'Co-Founder & Chief Strategy Officer (CSO) at Maverika',Linkedinurl:'https://www.linkedin.com/in/drhananelbasha/', imageUrl: img11},
+//   { name: 'Dr. Najwa', company: 'Chief Executive Officer at Technology Innovation Institute',Linkedinurl:'https://www.linkedin.com/in/drnajwaaaraj/', imageUrl: img12},
+  { name: 'Dr. Salim Al Shuaili', company: 'Global AI Ambassador at Global Council for Responsible AI',Linkedinurl:'https://www.linkedin.com/in/shoaily/', imageUrl: img13},
+//   { name: 'Fatima Tayeb', company: 'Data & AI Cloud Solution Architect at Microsoft',Linkedinurl:'https://www.linkedin.com/in/fatimataayeb/', imageUrl: img14},
+  { name: 'Nikita Gordeev', company: 'Chief Technology Officer at Snoonu',Linkedinurl:'https://www.linkedin.com/in/nmgordeev/', imageUrl: img16},
+  // { name: 'Michael James', company: 'Space X', imageUrl: img17},
+
+  
 ];
 
 const LinkedInIcon = () => (
@@ -25,16 +44,20 @@ const LinkedInIcon = () => (
     </svg>
 );
 
-const ExpertCard = ({ name, company, imageUrl }) => (
+const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => (
     <div className="w-48 md:w-56 flex-shrink-0 mx-auto">
         <div className="p-[2px] rounded-tr-[50px] bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 rounded-[22px]">
             <div className="relative rounded-tr-[50px] bg-[#2A2344] rounded-[20px] p-3">
-                <div className="absolute top-3 left-3 bg-white/10 rounded-full p-2"><LinkedInIcon /></div>
+                <a href={Linkedinurl} target='_blank' className="absolute top-3 left-3 bg-white/10 rounded-full p-2"><LinkedInIcon /></a>
                 <img src={imageUrl} alt={name} className="w-full h-56 md:h-64 object-cover rounded-[14px]" />
-                <div className="absolute bottom-6 left-6 right-6 p-2 text-center bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
-                    <h3 className="font-bold text-white text-base">{name}</h3>
-                    <p className="text-gray-300 text-xs">{company}</p>
-                </div>
+              <div className="relative  z-10 w-full">
+  <div className="absolute group bottom-0 left-0 right-0  p-[2px] rounded-xl bg-gradient-to-r from-[#CA5295]  to-[#3DD8D8]">
+    <div className="rounded-[10px] bg-[#2A2344] backdrop-blur-md p-[3.5px] text-center w-full border border-white/10">
+      <h3 className="font-bold text-white text-base line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{name}</h3>
+      <p className="text-gray-300 text-xs line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{company}</p>
+    </div>
+  </div>
+</div>
             </div>
         </div>
     </div>
@@ -47,8 +70,8 @@ const OurSpeakers = () => {
         <div className="bg-[#2A2344] font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
             <div className="w-full max-w-7xl mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">Experts Lineup</h2>
-                    <p className="text-gray-300 mt-2">Meet Our Industry Leaders & AI Gurus!</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">OUR SPEAKERS</h2>
+                    <p className="text-gray-300 inter mt-2">Meet Our Industry Leader & AI Gurus!</p>
                 </div>
 
                 <div className="relative flex items-center justify-center">
@@ -79,9 +102,7 @@ const OurSpeakers = () => {
                             
                             768: { slidesPerView: 3, spaceBetween: 20 },
                            
-                            1024: { slidesPerView: 4, spaceBetween: 24 },
-                            
-                            1280: { slidesPerView: 5, spaceBetween: 30 },
+                         
                         }}
                         
                     >

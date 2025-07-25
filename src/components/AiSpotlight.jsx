@@ -54,10 +54,10 @@ export default function AiSpotlight() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-t from-[#2B204C] to-[#170929] py-16 px-4 text-white">
+    <section id="spotlight" className="bg-gradient-to-t from-[#2B204C] to-[#170929] py-16 px-4 text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">AI SPOTLIGHT</h2>
-        <p className="text-lg mb-12 max-w-4xl mx-auto">
+        <p className="text-lg mb-12 inter max-w-4xl mx-auto">
           The AI Hackathon isn’t just about building incredible solutions—it’s your gateway to growth, recognition, and real-world impact. Here’s what you stand to gain by participating:
         </p>
 
