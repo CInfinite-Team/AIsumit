@@ -78,7 +78,8 @@ const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => (
 
 const OurSpeakers = () => {
     return (
-        <div className="bg-[#2A2344] font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
+        <div className="bg-[#2A2344] relative font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
+          <div className="absolute -top-20 -translate-y-[80%]" id="Experts"></div>
             <div className="w-full max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">OUR SPEAKERS</h2>

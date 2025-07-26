@@ -3,7 +3,8 @@ import PriceBg from '../assets/price-bg.svg';
 import GreenTick from '../assets/GreenTick.svg';
 const PricingSection = () => {
   return (
-    <section id='pricing' className="bg-gradient-to-b from-[#1B1036] to-[#2C1A4D] py-16 text-white">
+    <section  className="bg-gradient-to-b relative from-[#1B1036] to-[#2C1A4D] py-16 text-white">
+       <div className="absolute -top-20 -translate-y-[80%]" id="pricing"></div>
       <div className=" mx-auto px-4">
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
           WHY ATTEND AI SUMMIT?

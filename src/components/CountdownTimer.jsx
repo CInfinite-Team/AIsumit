@@ -1,27 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 
-const CardSegment = ({ number, position }) => {
-  return (
-    <div className="absolute border-b-2 border-black bg-cyan-400 w-full h-full overflow-hidden rounded-lg">
-      <div
-        className={`
-          absolute inset-0 w-full h-full flex justify-center
-          text-3xl md:text-8xl font-bold text-white
-          ${position === 'top' ? 'items-end' : 'items-start'}
-        `}
-      >
-        
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-        
-        <span className={position === 'top' ? 'pb-1' : 'pt-1'}>{number}</span>
-      </div>
-    </div>
-  );
-};
-
-
-
 const Separator = () => {
     return (
         <div className="relative w-6 h-40 flex items-center justify-center">
@@ -45,33 +24,30 @@ const FlipUnit = ({ current, next, label, isFlipping }) => {
         style={{ perspective: '400px' }}
       >
      
-        <div className="absolute bottom-0 w-full h-1/2  bg-cyan-400  rounded-b-lg">
-            <CardSegment number={current} position="bottom" />
-        </div>
-
-       
-        <div className="absolute top-0 w-full h-1/2 bg-cyan-400 rounded-t-lg">
-            <CardSegment number={next} position="top" />
-        </div>
-
-        
-        <div 
-            className={`absolute top-0 w-full h-1/2 bg-cyan-400 rounded-t-lg 
-                        ${isFlipping ? 'animate-flipTop' : ''}`}
-            style={{ transformStyle: 'preserve-3d', transformOrigin: 'bottom center', backfaceVisibility: 'hidden' }}
-        >
-           
-            <div className="absolute inset-0" style={{ backfaceVisibility: 'hidden' }}>
-                <CardSegment number={current} position="top" />
-            </div>
-            
-            <div className="absolute inset-0" style={{ backfaceVisibility: 'hidden', transform: 'rotateX(180deg)' }}>
-                <CardSegment number={next} position="top" />
+        {/* Single number display - shows current when not flipping, next when flipping */}
+        <div className="absolute inset-0 w-full h-full bg-cyan-400 rounded-lg">
+            <div className="absolute inset-0 w-full h-full flex justify-center items-center text-3xl md:text-8xl font-bold text-white">
+                <div className="absolute inset-0 bg-black opacity-10"></div>
+                <span>{isFlipping ? next : current}</span>
             </div>
         </div>
+
+        {/* Flip animation overlay */}
+        {isFlipping && (
+            <div 
+                className="absolute inset-0 w-full h-full bg-cyan-400 rounded-lg animate-flipTop"
+                style={{ transformStyle: 'preserve-3d', transformOrigin: 'center center', backfaceVisibility: 'hidden' }}
+            >
+                <div className="absolute inset-0 w-full h-full flex justify-center items-center text-3xl md:text-8xl font-bold text-white">
+                    <div className="absolute inset-0 bg-black opacity-10"></div>
+                    <span>{current}</span>
+                </div>
+            </div>
+        )}
 
        
         <div className="absolute w-3 h-3 bg-[#1D1536] rounded-full top-1/2 -mt-1.5 -left-1.5 z-10"></div>
+        <div className="absolute w-full h-1 bg-[#1D1536]  top-1/2 -mt-0.5 -left-1.5 z-10"></div>
         <div className="absolute w-3 h-3 bg-[#1D1536] rounded-full top-1/2 -mt-1.5 -right-1.5 z-10"></div>
       </div>
 

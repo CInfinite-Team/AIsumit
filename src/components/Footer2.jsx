@@ -4,27 +4,14 @@ import Call from '../assets/call.svg'
 import Mail from '../assets/mail.svg'
 import globe from '../assets/globeico.svg'
 import locationico from '../assets/location.svg'
-import { useLocation } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
 
 // --- SVG Icon Components ---
 
 const Footer = () => {
-  const location = useLocation();
 
-  const handlenavigation = (e,id) => {
-    e.preventDefault();
-    const pricingSection = document.getElementById(id);
-    if (location.pathname === '/') {
-      
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.open(`/#${id}`, '_blank', 'noopener,noreferrer');
-      pricingSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
+
   return (
     <footer className="[background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)] text-gray-300 font-sans">
       <div className="w-full max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -35,8 +22,8 @@ const Footer = () => {
           <div className="space-y-4 ">
              <div className='flex flex-col w-fit items-center justify-center'>
                    <img src={Logo} alt="Logo" className="h-12" />
-                   <a className='text-[10px] text-center ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
-                   </div> 
+                   <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
+                   </div>
                         <p className="text-sm">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
 
              </div>
@@ -45,14 +32,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-white mb-4">Quick links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
-     <li>  <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a></li>
-
-              <li><a href="#Participate" className="hover:text-white transition-colors">Who can participate?</a></li>
-              <li><a href="#Experts" className="hover:text-white transition-colors">Experts</a></li>
+              <li><a  className="hover:text-white transition-colors" href="#Agenda">Agenda</a></li>
+              <li><a  className="hover:text-white transition-colors" href="#pricing">Why Attend AI Summit?</a></li>
+              <li><a href="#Experts" className="hover:text-white transition-colors">Our Speakers</a></li>
               {/* <li><a href="#" className="hover:text-white transition-colors">Prizes</a></li> */}
-              <li><a href="#Partners" className="hover:text-white transition-colors">Partners</a></li>
-              <li><a onClick={(e)=>handlenavigation(e,'FAQ')} className="cursor-pointer hover:text-white transition-colors">FAQs</a></li>
+             
             </ul>
           </div>
 
