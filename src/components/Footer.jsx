@@ -5,6 +5,7 @@ import Mail from '../assets/mail.svg'
 import globe from '../assets/globeico.svg'
 import locationico from '../assets/location.svg'
 import { useLocation } from 'react-router-dom';
+import Logo from '../assets/logo.svg';
 
 // --- SVG Icon Components ---
 
@@ -34,8 +35,8 @@ const Footer = () => {
           <div className="space-y-4 ">
             <div className="flex items-center gap-3">
                 
-                <img src={AI} alt="" />
-                 <p className="text-xs w-full">| Powered By <span className="font-semibold text-white">Risin Ventures</span></p>
+                <img src={Logo} alt="" className='w-[80%]' />
+                 {/* <p className="text-xs w-full">| Powered By <span className="font-semibold text-white">Risin Ventures</span></p> */}
         
             </div>
                         <p className="text-sm">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
