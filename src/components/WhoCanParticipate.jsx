@@ -61,7 +61,10 @@ const CardWrapper = ({ children }) => {
 
 const WhoCanParticipate = () => {
   return (
-    <section id='Participate' className="text-white py-16 px-6 md:px-16 font-sans flex items-center justify-center min-h-screen">
+    <section  className="text-white py-16 px-6 relative md:px-16 font-sans flex items-center justify-center min-h-screen">
+            <div className="absolute -top-20 -translate-y-1/2" id='Participate'></div>
+
+     
       <div className="w-full">
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">WHO CAN PARTICIPATE?</h2>
         <p className="text-center inter text-gray-300 max-w-3xl mx-auto mb-12 text-sm md:text-base">

@@ -135,7 +135,8 @@ export default function EventsPlanned() {
                 : "bg-[#3c2a55] hover:bg-[#2f1d48]"
             }`}
           >
-            <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 rounded-md text-sm text-white">
+            <button className={`flex h-fit justify-center items-center gap-2 px-6 py-2 rounded-md text-sm text-white transition-colors duration-300 
+              ${activeDay === day ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 text-white' : 'bg-[#2B204C] text-white hover:bg-[#3c3357]'}`}>
               {day}
             </button>
           </div>

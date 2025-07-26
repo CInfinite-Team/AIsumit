@@ -4,16 +4,18 @@ import Logo from '../../assets/logo.svg';
 import { useLocation } from 'react-router-dom';
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const[Quatar,setQuatar]=useState(false)
+  const [Quatar, setQuatar] = useState(false);
   const location = useLocation();
   
-useEffect(() => {
-  if (location.pathname !== '/') {
-    setQuatar(true)
-  } else {
-    setQuatar(false)
-  }
-}, [location.pathname]);
+  useEffect(() => {
+    if (location.pathname !== '/') {
+      setQuatar(true)
+    } else {
+      setQuatar(false)
+    }
+  }, [location.pathname]);
+
+  
 
   const handlenavigation = (e,id) => {
     e.preventDefault();
@@ -44,7 +46,7 @@ useEffect(() => {
       <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
         
       <div className='flex flex-col items-center justify-center'>
-            <img src={Logo} alt="Logo" className="h-12" />
+            <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-12" /></a>
             <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
             </div>
        

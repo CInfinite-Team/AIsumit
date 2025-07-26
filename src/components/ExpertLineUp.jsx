@@ -18,7 +18,6 @@ import img15 from '../assets/Team/Hussain-Sajjad-Ali-Al-Lawati.webp'
 // import img16 from '../assets/Team/Nikita-Gordeev.webp'
 // import img17 from '../assets/Team/Sanjay-Chawla.webp'
 import img18 from '../assets/Team/Thuraya-Al-Harthi.webp'
-import { useInView } from 'react-intersection-observer';
 
 const experts = [
   { name: 'Abdullah Abu Sheikh', company: 'Chief Executive Officer at Botim',Linkedinurl:'https://www.linkedin.com/in/abdallahabusheikh/', imageUrl: img1 },
@@ -91,17 +90,12 @@ const CardWrapper = ({ children }) => (
 );
 
 const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => {
-  const { ref, inView } = useInView({
-    threshold: 0.4,
-    triggerOnce: false,
-  });
+ 
 
   return (
     <div
-      ref={ref}
-      className={`transition-all duration-700 ease-out transform ${
-        inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-1/2'
-      }`}
+     
+     
     >
       <CardWrapper>
         <a
@@ -140,7 +134,9 @@ const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => {
 
 const ExpertsLineup = () => {
   return (
-    <div id='Experts' className="bg-[#2A2344] font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
+    <div  className="bg-[#2A2344] relative font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
+                  <div className="absolute -top-20 -translate-y-1/2" id='Experts'></div>
+
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">Experts Lineup</h2>
@@ -148,7 +144,7 @@ const ExpertsLineup = () => {
         </div>
 
         <div className="relative flex items-center justify-center">
-          <button className="experts-carousel-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:bg-white/20 transition-colors duration-300">
+          <button className="experts-carousel-prev absolute  hidden lg:block left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:bg-white/20 transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
             </svg>
@@ -181,14 +177,30 @@ const ExpertsLineup = () => {
             ))}
           </Swiper>
 
-          <button className="experts-carousel-next absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:opacity-90 transition-opacity duration-300">
+          <button className="experts-carousel-next hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:opacity-90 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+
+
+           <div className='flex items-center lg:hidden justify-center gap-4 absolute -bottom-10 left-1/2 -translate-x-1/2'>
+           <button className="experts-carousel-prev    lg:hidden  z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:bg-white/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+          </button>
+           <button className="experts-carousel-next  lg:hidden z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:opacity-90 transition-opacity duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </button>
         </div>
+        </div>
 
-        <div className="experts-carousel-pagination flex justify-center items-center space-x-2 mt-12"></div>
+       
+
+        <div className="experts-carousel-pagination hidden lg:flex justify-center items-center space-x-2 mt-12"></div>
       </div>
     </div>
   );

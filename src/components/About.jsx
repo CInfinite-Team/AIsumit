@@ -30,19 +30,23 @@ function About() {
       >
         {/* Toggle Buttons */}
         <div className="flex gap-6">
-          {['AI Summit', 'AI Hack'].map((label, idx) => (
-            <div
-              key={label}
-              className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]"
-            >
-              <button
-                onClick={() => setChnageImg(idx === 1)}
-                className="px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm"
+          {['AI Summit', 'AI Hack'].map((label, idx) => {
+            const isActive = ChangeImg === (idx === 1);
+            return (
+              <div
+                key={label}
+                className={`inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] ${isActive ? '' : 'opacity-70'}`}
               >
-                {label}
-              </button>
-            </div>
-          ))}
+                <button
+                  onClick={() => setChnageImg(idx === 1)}
+                  className={`px-6 py-3 rounded-md transition-colors duration-300 font-semibold text-sm 
+                    ${isActive ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 text-white' : 'bg-[#2B204C] text-white hover:bg-[#3c3357]'}`}
+                >
+                  {label}
+                </button>
+              </div>
+            );
+          })}
         </div>
 
         {/* Description */}

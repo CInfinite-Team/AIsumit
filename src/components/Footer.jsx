@@ -34,10 +34,10 @@ const Footer = () => {
           {/* Section 1: AI Hack */}
           <div className="space-y-4 ">
              <div className='flex flex-col w-fit items-center justify-center'>
-                   <img src={Logo} alt="Logo" className="h-12" />
+                   <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-16" /></a>
                    <a className='text-[10px] text-center ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
                    </div> 
-                        <p className="text-sm">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
+                        <p className="text-xs w-3/4">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
 
              </div>
 
@@ -74,11 +74,11 @@ const Footer = () => {
               <input 
                 type="email" 
                 placeholder="Enter Email" 
-                className="bg-transparent focus:outline-none pl-2 w-[55%] py-3 rounded-l-lg  "
+                className="bg-transparent focus:outline-none pl-4 w-[55%] py-3 rounded-l-lg  "
               />
                 <div className="inline-block md:mr-2 rounded-lg h-fit overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
           <button className="px-6 py-2 w-fit rounded-lg transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-xs whitespace-nowrap">
-            notify me
+            Notify me
           </button>
         </div>
             </div>

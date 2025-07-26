@@ -58,9 +58,9 @@ function HeroSection() {
       </div>
 
       {/* Mobile Video */}
-      <div className="lg:hidden absolute top-0 w-full h-screen left-0 z-20 object-cover pointer-events-none">
-        <div className='w-full h-screen absolute bg-black/75' />
-        <video className="w-full h-full object-cover" muted loop autoPlay playsInline src={HeroSectionvid} />
+      <div className="lg:hidden absolute bottom-0 w-full min-h-screen left-0 z-20 object-cover pointer-events-none">
+        <div className='w-full h-[120vh] absolute object-cover bg-black/75' />
+        <video className=" h-[120vh] object-cover" muted loop autoPlay playsInline src={HeroSectionvid} />
       </div>
 
       {/* Main Content */}
@@ -113,7 +113,7 @@ function HeroSection() {
       </div>
 
       {/* Globe Illustration */}
-      <img src={Globe} alt='' className='absolute bottom-0 lg:w-[65%] left-1/2 translate-y-1/3 -translate-x-1/2 lg:-translate-x-[55%] pointer-events-none' />
+      <img src={Globe} alt='' className='absolute bottom-0 lg:block hidden lg:w-[65%] left-1/2 translate-y-1/3 -translate-x-1/2 lg:-translate-x-[55%] pointer-events-none' />
     </div>
   );
 }
