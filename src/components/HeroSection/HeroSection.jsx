@@ -1,6 +1,6 @@
 import Texture from '../../assets/Texture.svg';
 import Ray from '../../assets/Ray.svg';
-import Heroimg from '../../assets/Heroimg.svg';
+// import Heroimg from '../../assets/Heroimg.svg';
 import Globe from '../../assets/Globe.svg';
 import partner1 from '../../assets/partner1.svg';
 import partner2 from '../../assets/partner2.svg';
@@ -48,6 +48,37 @@ useEffect(() => {
     clipPath: 'polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%)'
   }}
 >
+  <div className='w-full h-screen absolute bg-black/40' />
+  <video
+    className="w-full h-full object-cover"
+    muted
+    loop
+    autoPlay
+    playsInline
+    src={HeroSectionvid}
+  />
+</div>
+<div
+  className=" lg:hidden absolute top-0 w-full h-screen left-0 z-20 object-cover pointer-events-none"
+ 
+>
+  <div className='w-full h-screen absolute bg-black/75' />
+  <video
+    className="w-full h-full object-cover"
+    muted
+    loop
+    autoPlay
+    playsInline
+    src={HeroSectionvid}
+  />
+</div>
+<div
+  className="hidden lg:block absolute top-0 w-[48%] h-screen right-0 z-20 object-cover pointer-events-none"
+  style={{
+    clipPath: 'polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%)'
+  }}
+>
+  <div className='w-full h-screen absolute bg-black/40' />
   <video
     className="w-full h-full object-cover"
     muted
@@ -75,7 +106,7 @@ useEffect(() => {
         {/* Partners */}
         <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 mt-12 w-full'>
           <div className='flex flex-col items-start'>
-            <span className='text-teal-300 font-semibold mb-2'>Strategic Partner:</span>
+            <span className='text-teal-300 font-semibold mb-2'>Strategic Partner</span>
            
             <div className='flex flex-col md:flex-row gap-4'>
               <img src={partner1} alt='' className='w-32  rounded flex items-center justify-center text-xs'/>
@@ -83,7 +114,7 @@ useEffect(() => {
             </div>
           </div>
           <div className='flex flex-col items-start'>
-            <span className='text-teal-300 font-semibold mb-2'>Enterprise Partner:</span>
+            <span className='text-teal-300 font-semibold mb-2'>Enterprise Partner</span>
             
               <img src={partner3} alt='' className='w-32  rounded flex items-center justify-center text-xs'/>
           </div>

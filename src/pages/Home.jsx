@@ -25,6 +25,12 @@ function Home() {
   { src: Google, alt: 'Google' },
   { src: Oracle, alt: 'Oracle' },
   { src: IBM, alt: 'IBM' },
+  { src: SambaNova, alt: 'SambaNova' },
+  { src: AWS, alt: 'AWS' },
+  { src: Microsoft, alt: 'Microsoft' },
+  { src: Google, alt: 'Google' },
+  { src: Oracle, alt: 'Oracle' },
+  { src: IBM, alt: 'IBM' },
  
 ];
   return (

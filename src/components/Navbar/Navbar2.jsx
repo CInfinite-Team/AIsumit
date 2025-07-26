@@ -15,19 +15,6 @@ useEffect(() => {
   }
 }, [location.pathname]);
 
-  const handlenavigation = (e,id) => {
-    e.preventDefault();
-    const pricingSection = document.getElementById(id);
-    if (location.pathname === '/') {
-      
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.open(`/#${id}`, '_blank', 'noopener,noreferrer');
-      pricingSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <div className="w-full sticky top-0 z-50 flex flex-col">
@@ -43,10 +30,11 @@ useEffect(() => {
    
       <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
         
-      <div className='flex flex-col items-center justify-center'>
-            <img src={Logo} alt="Logo" className="h-12" />
-            <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
-            </div>
+    <div className='flex flex-col items-center justify-center'>
+        <img src={Logo} alt="Logo" className="h-12" />
+        <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
+        </div>
+
        
         <button
           className="xl:hidden text-white text-2xl focus:outline-none"
@@ -57,12 +45,10 @@ useEffect(() => {
 
         
         <div className="hidden xl:flex gap-6 items-center justify">
-          <a className='cursor-pointer' href='#about'>About</a>
-          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a>
-          <a href="#Participate">Who can participate?</a>
-          <a href="#Experts">Experts</a>
-          <a href="#Partners">Partners</a>
-          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'FAQ')}>FAQs</a>
+          <a className='cursor-pointer' href='#Agenda'>Agenda</a>
+          <a href="#pricing">Why Attend AI Summit?</a>
+          <a href="#Experts">Our Speakers</a>
+          
           
         </div>
          <a href="https://forms.gle/QdQturFqbxXnkNa89" className='hidden xl:block' target="_blank" rel="noopener noreferrer">
@@ -78,12 +64,9 @@ useEffect(() => {
     
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 px-4 py-4 bg-[#1D1536] text-white xl:hidden">
-          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
-          <a onClick={() => setMenuOpen(false)} href="#spotlight">AI Spotlight</a>
-          <a onClick={() => setMenuOpen(false)} href="#Participate">Who can participate?</a>
-          <a onClick={() => setMenuOpen(false)} href="#Experts">Experts</a>
-          <a onClick={() => setMenuOpen(false)} href="#Partners">Partners</a>
-          <a onClick={() => setMenuOpen(false)} href="#FAQ">FAQs</a>
+          <a onClick={() => setMenuOpen(false)} href="#Agenda">Agenda</a>
+          <a onClick={() => setMenuOpen(false)} href="#pricing">Why Attend AI Summit?</a>
+          <a onClick={() => setMenuOpen(false)} href="#Experts">Our Speakers</a>
           <a onClick={() => setMenuOpen(false)} href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
             <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
               <button className="px-6 py-3 rounded-md transition-colors duration-300 active:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">

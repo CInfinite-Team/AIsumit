@@ -115,8 +115,9 @@ export default function EventsPlanned() {
   const [activeDay, setActiveDay] = useState("Day 1");
 
   return (
-    <div className="px-4 py-32 bg-gradient-to-b from-[#25123D] to-[#1B0E2C] text-white font-sans">
-      <h1 className="text-2xl uppercase md:text-3xl font-bold text-center mb-6">
+    <div className="px-4 py-32 relative bg-gradient-to-b from-[#25123D] to-[#1B0E2C] text-white font-sans">
+      <div className="absolute -top-10 -translate-y-1/2" id="Agenda"></div>
+      <h1  className="text-2xl uppercase md:text-3xl font-bold text-center mb-6">
         Qatar Edition Agenda
       </h1>
 

@@ -1,17 +1,33 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import EventDetail from './pages/EventDetail';
+import { useEffect, useState } from 'react';
+import Loader from './assets/Loading Page GIF.gif';
 
 function App() {
-  const futureDate = new Date();
-  futureDate.setDate(futureDate.getDate() + 5);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Show full animation for 2.5 seconds
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)] w-full flex justify-center items-center">
+        <img src={Loader} alt="Loading..." className="w-1/2 object-contain" />
+      </div>
+    );
+  }
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/event-detail" element={<EventDetail  />} />
-        
-        
+        <Route path="/event-detail" element={<EventDetail />} />
       </Routes>
     </Router>
   );
