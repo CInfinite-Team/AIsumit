@@ -60,9 +60,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-white mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={Call} className='w-5' alt="" /></div> <span>+974 4465 4622</span></li>
-              <li className="flex items-center gap-3"><div className='p-1 aspect-square flex items-center rounded-full bg-purple-700/20'><img src={Mail} className='w-5' alt="" /></div> <span>info@risin.ventures</span></li>
-              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={globe} className='w-5' alt="" /></div> <span>www.risin.ventures</span></li>
+              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={Call} className='w-5' alt="" /></div> <a href="tel:+97444654622"><span>+974 4465 4622</span></a></li>
+              <li className="flex items-center gap-3"><div className='p-1 aspect-square flex items-center rounded-full bg-purple-700/20'><img src={Mail} className='w-5' alt="" /></div> <a href="mailto:info@risin.ventures"><span>info@risin.ventures</span></a></li>
+              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={globe} className='w-5' alt="" /></div> <a href="https://risin.ventures/" target="_blank" rel="noopener noreferrer"><span>www.risin.ventures</span></a></li>
               <li className="flex items-center  gap-3"><div className=' w-7 h-7 aspect-square justify-center flex items-center rounded-full bg-purple-700/20'><img src={locationico} className='w-6 h-4' alt="" /></div> <span>Al Reem Tower, Office No 12, 3rd Floor, West Bay, Doha - Qatar</span></li>
             </ul>
           </div>
