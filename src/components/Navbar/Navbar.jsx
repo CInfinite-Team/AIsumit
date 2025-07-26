@@ -35,9 +35,9 @@ function Navbar() {
    
       <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
         
-
+      <a href="/">
         <img src={Logo} alt="Logo" className="h-14" />
-
+</a>
        
         <button
           className="xl:hidden text-white text-2xl focus:outline-none"
