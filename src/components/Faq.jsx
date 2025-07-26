@@ -104,13 +104,17 @@ const Faq = () => {
   };
 
   return (
+    <>
+                                  <div className=" -translate-y-20" id='FAQ'></div>
+
     <div
-      id="FAQ"
+      
       ref={ref}
-      className={`bg-[#2A2344] font-sans w-full min-h-screen flex items-center justify-center py-16 px-4 transition-all duration-1000 ease-out ${
+      className={`bg-[#2A2344]  font-sans w-full min-h-screen flex items-center justify-center py-16 px-4 transition-all duration-1000 ease-out ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
+
       <div className="w-full max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white">FAQs</h2>
@@ -131,6 +135,7 @@ const Faq = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

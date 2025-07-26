@@ -31,7 +31,7 @@ useEffect(() => {
       <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
         
     <div className='flex flex-col items-center justify-center'>
-        <img src={Logo} alt="Logo" className="h-12" />
+        <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-12" /></a>
         <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
         </div>
 

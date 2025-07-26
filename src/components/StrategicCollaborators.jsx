@@ -13,12 +13,14 @@ const StrategicCollaborators = ({ logos, title = 'OUR PARTNERS' }) => {
 
   return (
     <section
-      id="Partners"
+      
       ref={ref}
-      className={`w-full text-white py-10 transition-opacity duration-[1200ms] ease-in-out ${
+      className={`w-full text-white py-10 relative transition-opacity duration-[1200ms] ease-in-out ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
+                        <div className="absolute -top-40 -translate-y-1/2" id='Partners'></div>
+
       <div className="mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">{title}</h2>
         <p className="text-center text-gray-300 inter text-sm md:text-base max-w-xl mx-auto mb-8">

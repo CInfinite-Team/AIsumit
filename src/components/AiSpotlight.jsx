@@ -69,10 +69,13 @@ export default function AiSpotlight() {
   }, []);
 
   return (
+    <>
+           <div className=" -translate-y-20" id="spotlight"></div>
+
     <section
       ref={sectionRef}
-      id="spotlight"
-      className={`bg-gradient-to-t from-[#2B204C] to-[#170929] py-16 px-4 text-white transition-all duration-700 ${
+     
+      className={`bg-gradient-to-t from-[#2B204C] relative to-[#170929] py-16 px-4 text-white transition-all duration-700 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
@@ -193,5 +196,6 @@ export default function AiSpotlight() {
         </div>
       </div>
     </section>
+    </>
   );
 }

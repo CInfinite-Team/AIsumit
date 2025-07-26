@@ -83,7 +83,7 @@ const OurSpeakers = () => {
             <div className="w-full max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">OUR SPEAKERS</h2>
-                    <p className="text-gray-300 inter mt-2">Meet Our Industry Leader & AI Gurus!</p>
+                    <p className="text-gray-300 inter mt-2">Meet our industry leaders & AI gurus!</p>
                 </div>
 
                 <div className="relative flex items-center justify-center">
