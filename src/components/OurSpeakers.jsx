@@ -34,6 +34,17 @@ const experts = [
 //   { name: 'Fatima Tayeb', company: 'Data & AI Cloud Solution Architect at Microsoft',Linkedinurl:'https://www.linkedin.com/in/fatimataayeb/', imageUrl: img14},
   { name: 'Nikita Gordeev', company: 'Chief Technology Officer at Snoonu',Linkedinurl:'https://www.linkedin.com/in/nmgordeev/', imageUrl: img16},
   // { name: 'Michael James', company: 'Space X', imageUrl: img17},
+  { name: 'Amr Metwally', company: 'AED Director of Healthcare Innovation, Itqan Clinical Simulation & Innovation Center at Hamad Medical Corporation',Linkedinurl:'https://www.linkedin.com/in/amrmetwally/', imageUrl: img2 },
+  // { name: 'Michael James', company: 'Space X',Linkedinurl:'', imageUrl: img6},
+  { name: 'Dr. Ali AlSanousi', company: 'Executive Director Clinical Information Systems at Hamad Medical Corporation',Linkedinurl:'https://www.linkedin.com/in/sanousi/', imageUrl: img7},
+//   { name: 'Dr. Fatmah Baothman', company: 'Chairwoman at Global Genie Ai',Linkedinurl:'https://www.linkedin.com/in/dr-fatmah-baothman-b7680b16b/?originalSubdomain=sa', imageUrl: img9},
+  // { name: 'Michael James', company: 'Space X',Linkedinurl:'', imageUrl: img10},
+  { name: 'Dr. Hanan El Basha', company: 'Co-Founder & Chief Strategy Officer (CSO) at Maverika',Linkedinurl:'https://www.linkedin.com/in/drhananelbasha/', imageUrl: img11},
+//   { name: 'Dr. Najwa', company: 'Chief Executive Officer at Technology Innovation Institute',Linkedinurl:'https://www.linkedin.com/in/drnajwaaaraj/', imageUrl: img12},
+  { name: 'Dr. Salim Al Shuaili', company: 'Global AI Ambassador at Global Council for Responsible AI',Linkedinurl:'https://www.linkedin.com/in/shoaily/', imageUrl: img13},
+//   { name: 'Fatima Tayeb', company: 'Data & AI Cloud Solution Architect at Microsoft',Linkedinurl:'https://www.linkedin.com/in/fatimataayeb/', imageUrl: img14},
+  { name: 'Nikita Gordeev', company: 'Chief Technology Officer at Snoonu',Linkedinurl:'https://www.linkedin.com/in/nmgordeev/', imageUrl: img16},
+  // { name: 'Michael James', company: 'Space X', imageUrl: img17},
 
   
 ];
@@ -54,7 +65,7 @@ const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => (
   <div className="absolute group bottom-0 left-0 right-0  p-[2px] rounded-xl bg-gradient-to-r from-[#CA5295]  to-[#3DD8D8]">
     <div className="rounded-[10px] bg-[#2A2344] backdrop-blur-md p-[3.5px] text-center w-full border border-white/10">
       <h3 className="font-bold text-white text-base line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{name}</h3>
-      <p className="text-gray-300 text-xs line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{company}</p>
+      <p className="text-gray-300 text-xs line-clamp-1 inter transition-transform duration-300 group-hover:line-clamp-none">{company}</p>
     </div>
   </div>
 </div>
@@ -101,6 +112,8 @@ const OurSpeakers = () => {
                             320: { slidesPerView: 1, spaceBetween: 10 },
                             
                             768: { slidesPerView: 3, spaceBetween: 20 },
+                            1024: { slidesPerView: 4, spaceBetween: 20 },
+                            1200: { slidesPerView: 5, spaceBetween: 20 },
                            
                          
                         }}

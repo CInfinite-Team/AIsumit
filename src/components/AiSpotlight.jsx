@@ -57,8 +57,8 @@ export default function AiSpotlight() {
     <section id="spotlight" className="bg-gradient-to-t from-[#2B204C] to-[#170929] py-16 px-4 text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">AI SPOTLIGHT</h2>
-        <p className="text-lg mb-12 inter max-w-4xl mx-auto">
-          The AI Hackathon isn’t just about building incredible solutions—it’s your gateway to growth, recognition, and real-world impact. Here’s what you stand to gain by participating:
+        <p className="text-md mb-12 text-gray-300 inter max-w-4xl mx-auto">
+         The AI Summit | AI Hack isn’t just about building incredible solutions—it’s your gateway to growth, recognition, and real-world impact. Here’s what you stand to gain by participating:
         </p>
 
 
@@ -66,7 +66,7 @@ export default function AiSpotlight() {
         {/* Desktop Cards */}
         <div className="hidden xl:flex gap-6 justify-center ">
           {cardData.map((card, index) => (
-             <div key={index} className="w-[260px] h-[270px] relative">
+             <div key={index} className="w-[260px] h-[250px] relative">
           {/* SVG Background */}
           <svg
             viewBox="0 0 264 330"
@@ -98,10 +98,10 @@ export default function AiSpotlight() {
           {/* Card Content */}
           <div className="relative z-10 flex flex-col h-full p-4 gap-2">
             <img src={card.icon} className="w-10 h-10" alt={card.title} />
-            <h3 className="text-xl font-bold text-white text-left">
+            <h3 className="text-lg font-bold text-white text-left">
               {card.title}
             </h3>
-            <p className="text-sm text-left text-gray-300">
+            <p className="text-sm text-left inter text-gray-300">
               {card.description}
             </p>
           </div>

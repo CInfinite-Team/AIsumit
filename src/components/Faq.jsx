@@ -102,7 +102,7 @@ const AccordionItem = ({ item, isOpen, onClick }) => {
                 </button>
 
                 <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-                    <p className="text-gray-300 px-6 pb-4">
+                    <p className="text-gray-300 inter px-6 pb-4">
                         {item.answer}
                     </p>
                 </div>
@@ -126,7 +126,7 @@ const Faq = () => {
       <div className="w-full max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white">FAQs</h2>
-          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300 inter mt-4 max-w-2xl mx-auto">
             We are offering cash prizes, incubation opportunities, and exclusive mentorship sessions to help winners take their AI innovations to the next level!
           </p>
         </div>

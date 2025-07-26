@@ -45,7 +45,7 @@ function About2() {
        
         <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
           <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-            <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+            <button className="px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
               Become a Partner
             </button>
           </div>

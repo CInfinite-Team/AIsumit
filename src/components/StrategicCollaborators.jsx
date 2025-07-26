@@ -43,7 +43,7 @@ const StrategicCollaborators = ({logos,title='OUR PARTNERS'}) => {
     <section id='Partners' className="w-full  text-white py-10">
       <div className="mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">{title}</h2>
-        <p className="text-center inter text-sm md:text-base max-w-xl mx-auto mb-8">
+        <p className="text-center text-gray-300 inter text-sm md:text-base max-w-xl mx-auto mb-8">
           Our global partnerships with leading technology and data firms fuel our innovation and expand our reach.
         </p>
 

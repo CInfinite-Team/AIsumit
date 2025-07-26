@@ -59,7 +59,7 @@ const logos = [
     <StrategicCollaborators title='STRATEGIC COLLABORATORS' logos={logos}/>
     <OurSpeakers/>
     <WhoCanParticipate/>
-    <ExpertLineUp/>
+    {/* <ExpertLineUp/> */}
     <PricingSection/>
     <JoinPoster/>
     <Footer/>

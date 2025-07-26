@@ -33,6 +33,19 @@ const experts = [
   { name: 'Hussain Sajad Ali Al Lawati', company: 'Head of IT Applications & Innovation at National Bank of Oman',Linkedinurl:'https://www.linkedin.com/in/hussain-sajjad-ali-al-lawati-75328946/', imageUrl: img15},
   // { name: 'Michael James', company: 'Space X', imageUrl: img17},
   { name: 'Thuraya Al-Harthi', company: 'Director at Ministry of Transport, Communications and Information Technology',Linkedinurl:'https://www.linkedin.com/in/thuraya-al-harthi/?originalSubdomain=om', imageUrl: img18},
+  { name: 'Abdullah Abu Sheikh', company: 'Chief Executive Officer at Botim',Linkedinurl:'https://www.linkedin.com/in/abdallahabusheikh/', imageUrl: img1 },
+  { name: 'Anuj Gupta', company: 'Founder & CEO of Gradient Advisors',Linkedinurl:'https://www.linkedin.com/in/anujgupta-82/', imageUrl: img3},
+  { name: 'Chris Yeh', company: 'Founding Partner at Blitzscaling Ventures',Linkedinurl:'https://www.linkedin.com/in/chrisyeh/', imageUrl: img4},
+  { name: 'Debdulal Dey', company: 'Chief Digital & Analytics Officer (CDAO) at Hyperthink Systems',Linkedinurl:'https://www.linkedin.com/in/debdulal-dey-5801a11/', imageUrl: img5},
+  // { name: 'Michael James', company: 'Space X',Linkedinurl:'', imageUrl: img6},
+  { name: 'Dr. Arpit Yadav', company: 'Senior Scientist at CCE',Linkedinurl:'https://www.linkedin.com/in/dr-arpit-yadav-78687936/', imageUrl: img8},
+  // { name: 'Dr. Fatmah Baothman', company: 'Chairwoman at Global Genie Ai',Linkedinurl:'https://www.linkedin.com/in/dr-fatmah-baothman-b7680b16b/?originalSubdomain=sa', imageUrl: img9},
+  // { name: 'Michael James', company: 'Space X',Linkedinurl:'', imageUrl: img10},
+  // { name: 'Dr. Najwa', company: 'Chief Executive Officer at Technology Innovation Institute',Linkedinurl:'https://www.linkedin.com/in/drnajwaaaraj/', imageUrl: img12},
+  // { name: 'Fatima Tayeb', company: 'Data & AI Cloud Solution Architect at Microsoft',Linkedinurl:'https://www.linkedin.com/in/fatimataayeb/', imageUrl: img14},
+  { name: 'Hussain Sajad Ali Al Lawati', company: 'Head of IT Applications & Innovation at National Bank of Oman',Linkedinurl:'https://www.linkedin.com/in/hussain-sajjad-ali-al-lawati-75328946/', imageUrl: img15},
+  // { name: 'Michael James', company: 'Space X', imageUrl: img17},
+  { name: 'Thuraya Al-Harthi', company: 'Director at Ministry of Transport, Communications and Information Technology',Linkedinurl:'https://www.linkedin.com/in/thuraya-al-harthi/?originalSubdomain=om', imageUrl: img18},
 
   
 ];
@@ -86,15 +99,15 @@ const ExpertCard = ({ name, company, imageUrl,Linkedinurl }) => (
       <img
         src={imageUrl}
         alt={name}
-        className="w-full h-64 object-cover rounded-[16px] mb-4 z-10 relative"
+        className="w-full h-64 object-cover rounded-[16px] mb-5 z-10 relative"
         style={{ clipPath: 'inset(0 round 16px)' }}
       />
     </div>
    <div className="relative  z-10 w-full">
-  <div className="absolute group bottom-0 left-0 right-0 mb-4 p-[2px] rounded-xl bg-gradient-to-r from-[#CA5295]  to-[#3DD8D8]">
+  <div className="absolute group bottom-0 left-0 right-0 mb-5 p-[2px] rounded-xl bg-gradient-to-r from-[#CA5295]  to-[#3DD8D8]">
     <div className="rounded-[10px] bg-[#2A2344] backdrop-blur-md p-[3.5px] text-center w-full border border-white/10">
       <h3 className="font-bold text-white text-base line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{name}</h3>
-      <p className="text-gray-300 text-xs line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{company}</p>
+      <p className="text-gray-300 text-xs line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none inter">{company}</p>
     </div>
   </div>
 </div>
@@ -108,7 +121,7 @@ const ExpertsLineup = () => {
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">Experts Lineup</h2>
-          <p className="text-gray-300 inter mt-2">Meet Our Industry Leaders & AI Gurus!</p>
+          <p className="text-gray-300 inter mt-2">Meet our industry leaders & AI gurus!</p>
         </div>
 
         <div className="relative flex items-center justify-center">
@@ -135,7 +148,7 @@ const ExpertsLineup = () => {
               320: { slidesPerView: 1, spaceBetween: 10 },
               768: { slidesPerView: 3, spaceBetween: 20 },
               
-              1280: { slidesPerView: 3, spaceBetween: 30 },
+              1280: { slidesPerView: 5, spaceBetween: 30 },
             }}
           >
             {experts.map((expert, index) => (
