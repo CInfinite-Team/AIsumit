@@ -45,7 +45,7 @@ useEffect(() => {
 <div
   className="hidden lg:block absolute top-0 w-[48%] h-screen right-0 z-20 object-cover pointer-events-none"
   style={{
-    clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%)'
+    clipPath: 'polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%)'
   }}
 >
   <video
