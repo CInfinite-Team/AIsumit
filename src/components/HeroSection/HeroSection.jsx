@@ -37,7 +37,7 @@ useEffect(() => {
   };
 
   return (
-    <div className=' md:h-screen lg:max-h-[700px] overflow-hidden flex items-center relative w-full [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)]'>
+    <div className=' md:h-screen lg:h-[84vh]  2xl:h-[88vh] overflow-hidden flex items-center relative w-full [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)]'>
       {/* Background and overlay images */}
       <img src={Ray} className='absolute top-0 left-1/2 -translate-x-1/2 w-full mix-blend-color-dodge pointer-events-none' alt='' />
       <img src={Texture} className='w-full absolute h-screen object-cover pointer-events-none' alt='' />
