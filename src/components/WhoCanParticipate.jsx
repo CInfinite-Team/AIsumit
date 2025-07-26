@@ -7,44 +7,57 @@ import Entrepreneurs from '../assets/Entrepreneurs.svg';
 import TechCom from '../assets/TechCom.svg';
 import Startup from '../assets/Startup.svg';
 import investors from '../assets/investors.svg';
+import { useInView } from 'react-intersection-observer';
 
-const CardWrapper = ({ children }) => (
-  <div className="relative">
-    {/* SVG Background */}
-    <svg
-      width="704"
-      height="864"
-      viewBox="0 0 704 864"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute -top-2 -left-2 w-full md:w-[95%] lg:w-[98%] xl:w-fit h-[95%] z-0"
-      preserveAspectRatio="none"
+const CardWrapper = ({ children }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.4,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`relative transition-all duration-700 ease-out transform ${
+        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+      }`}
     >
-      <path
-        d="M24 1H549.262C563.354 1.00015 576.703 7.32376 585.63 18.2285L638.714 83.0752L693.646 156.567C699.718 164.692 703 174.564 703 184.707V840C703 852.703 692.703 863 680 863H24C11.2975 863 1 852.703 1 840V24C1.00001 11.2975 11.2975 1 24 1Z"
-        fill="#2B204C"
-        stroke="url(#paint0_linear_335_395)"
-        strokeWidth="2"
-      />
-      <defs>
-        <linearGradient
-          id="paint0_linear_335_395"
-          x1="387"
-          y1="0"
-          x2="829.133"
-          y2="366.226"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#CD3A8C" />
-          <stop offset="1" stopColor="white" stopOpacity="0.24" />
-        </linearGradient>
-      </defs>
-    </svg>
-    <div className="relative  z-10 p-3 py-2 gap-4 justify-items-end flex flex-col justify-center h-full">
-      {children}
+      {/* SVG Background */}
+      <svg
+        width="704"
+        height="864"
+        viewBox="0 0 704 864"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute -top-2 -left-2 w-full md:w-[95%] lg:w-[98%] xl:w-fit h-[95%] z-0"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M24 1H549.262C563.354 1.00015 576.703 7.32376 585.63 18.2285L638.714 83.0752L693.646 156.567C699.718 164.692 703 174.564 703 184.707V840C703 852.703 692.703 863 680 863H24C11.2975 863 1 852.703 1 840V24C1.00001 11.2975 11.2975 1 24 1Z"
+          fill="#2B204C"
+          stroke="url(#paint0_linear_335_395)"
+          strokeWidth="2"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_335_395"
+            x1="387"
+            y1="0"
+            x2="829.133"
+            y2="366.226"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#CD3A8C" />
+            <stop offset="1" stopColor="white" stopOpacity="0.24" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div className="relative z-10 p-3 py-2 gap-4 justify-items-end flex flex-col justify-center h-full">
+        {children}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const WhoCanParticipate = () => {
   return (
@@ -55,7 +68,7 @@ const WhoCanParticipate = () => {
           AI Hack is open to a diverse group of innovators who are eager to explore AI-driven solutions and push the boundaries of technology.
         </p>
 
-        <div className="grid lg:grid-cols-2 w-fit mx-auto xl:mx-[10vw] gap-6 place-items-center">
+        <div className="grid lg:grid-cols-2 w-fit mx-auto xl:mx-[10vw] 2xl:max-w-screen-xl xl:pl-10 2xl:pl-40 2xl:mx-auto gap-6 items-stretch">
           {/* Developers & Hustlers */}
           <CardWrapper>
 

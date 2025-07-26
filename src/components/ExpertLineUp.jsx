@@ -1,23 +1,24 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import img1 from '../assets/Team/Abdallah-Abu-Sheikh.webp'
-import img2 from '../assets/Team/Amr-Metwally.webp'
+// import img2 from '../assets/Team/Amr-Metwally.webp'
 import img3 from '../assets/Team/Anuj-Gupta.webp'
 import img4 from '../assets/Team/Chris-Yeh.webp'
 import img5 from '../assets/Team/Debdulal-Dey.webp'
-import img6 from '../assets/Team/Dr-Ahmed-Elmagarmid.webp'
-import img7 from '../assets/Team/Dr-Ali-AlSanousi.webp'
+// import img6 from '../assets/Team/Dr-Ahmed-Elmagarmid.webp'
+// import img7 from '../assets/Team/Dr-Ali-AlSanousi.webp'
 import img8 from '../assets/Team/Dr-Arpit-Yadav.webp'
-import img9 from '../assets/Team/Dr-Fatmah-Baothman.webp'
-import img10 from '../assets/Team/Dr-Fethi-Filali.webp'
-import img11 from '../assets/Team/Dr-Hanan-El-Basha.webp'
-import img12 from '../assets/Team/Dr-Najwa.webp'
-import img13 from '../assets/Team/Dr-Salim-Al-Shuaili.webp'
-import img14 from '../assets/Team/Fatima-Tayeb.webp'
+// import img9 from '../assets/Team/Dr-Fatmah-Baothman.webp'
+// import img10 from '../assets/Team/Dr-Fethi-Filali.webp'
+// import img11 from '../assets/Team/Dr-Hanan-El-Basha.webp'
+// import img12 from '../assets/Team/Dr-Najwa.webp'
+// import img13 from '../assets/Team/Dr-Salim-Al-Shuaili.webp'
+// import img14 from '../assets/Team/Fatima-Tayeb.webp'
 import img15 from '../assets/Team/Hussain-Sajjad-Ali-Al-Lawati.webp'
-import img16 from '../assets/Team/Nikita-Gordeev.webp'
-import img17 from '../assets/Team/Sanjay-Chawla.webp'
+// import img16 from '../assets/Team/Nikita-Gordeev.webp'
+// import img17 from '../assets/Team/Sanjay-Chawla.webp'
 import img18 from '../assets/Team/Thuraya-Al-Harthi.webp'
+import { useInView } from 'react-intersection-observer';
 
 const experts = [
   { name: 'Abdullah Abu Sheikh', company: 'Chief Executive Officer at Botim',Linkedinurl:'https://www.linkedin.com/in/abdallahabusheikh/', imageUrl: img1 },
@@ -89,30 +90,52 @@ const CardWrapper = ({ children }) => (
   </div>
 );
 
-const ExpertCard = ({ name, company, imageUrl,Linkedinurl }) => (
-  <CardWrapper>
-     <a href={Linkedinurl} target='_blank' className="absolute top-7 left-3 bg-white/10 rounded-full p-2 z-20">
-        <LinkedInIcon />
-      </a>
-    <div className="relative">
-     
-      <img
-        src={imageUrl}
-        alt={name}
-        className="w-full h-64 object-cover rounded-[16px] mb-5 z-10 relative"
-        style={{ clipPath: 'inset(0 round 16px)' }}
-      />
+const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+    triggerOnce: false,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 ease-out transform ${
+        inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-1/2'
+      }`}
+    >
+      <CardWrapper>
+        <a
+          href={Linkedinurl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-7 left-3 bg-white/10 rounded-full p-2 z-20"
+        >
+          <LinkedInIcon />
+        </a>
+        <div className="relative">
+          <img
+            src={imageUrl}
+            alt={name}
+            className="w-full h-64 object-cover rounded-[16px] mb-5 z-10 relative"
+            style={{ clipPath: 'inset(0 round 16px)' }}
+          />
+        </div>
+        <div className="relative z-10 w-full">
+          <div className="absolute group bottom-0 left-0 right-0 mb-5 p-[2px] rounded-xl bg-gradient-to-r from-[#CA5295] to-[#3DD8D8]">
+            <div className="rounded-[10px] bg-[#2A2344] backdrop-blur-md p-[3.5px] text-center w-full border border-white/10">
+              <h3 className="font-bold text-white text-base line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">
+                {name}
+              </h3>
+              <p className="text-gray-300 text-xs line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none inter">
+                {company}
+              </p>
+            </div>
+          </div>
+        </div>
+      </CardWrapper>
     </div>
-   <div className="relative  z-10 w-full">
-  <div className="absolute group bottom-0 left-0 right-0 mb-5 p-[2px] rounded-xl bg-gradient-to-r from-[#CA5295]  to-[#3DD8D8]">
-    <div className="rounded-[10px] bg-[#2A2344] backdrop-blur-md p-[3.5px] text-center w-full border border-white/10">
-      <h3 className="font-bold text-white text-base line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none">{name}</h3>
-      <p className="text-gray-300 text-xs line-clamp-1 transition-transform duration-300 group-hover:line-clamp-none inter">{company}</p>
-    </div>
-  </div>
-</div>
-  </CardWrapper>
-);
+  );
+};
 
 
 const ExpertsLineup = () => {

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; 
+import React, { useEffect, useRef, useState } from "react";
 import spotlight1 from '../assets/spotlight1.svg';
 import spotlight2 from '../assets/spotlight2.svg';
 import spotlight3 from '../assets/spotlight3.svg';
@@ -45,6 +45,21 @@ const cardData = [
 ];
 
 export default function AiSpotlight() {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      {
+        threshold: 0.4, // Trigger when 40% of section is visible
+      }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const event = new Event('resize');
@@ -54,58 +69,58 @@ export default function AiSpotlight() {
   }, []);
 
   return (
-    <section id="spotlight" className="bg-gradient-to-t from-[#2B204C] to-[#170929] py-16 px-4 text-white">
+    <section
+      ref={sectionRef}
+      id="spotlight"
+      className={`bg-gradient-to-t from-[#2B204C] to-[#170929] py-16 px-4 text-white transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">AI SPOTLIGHT</h2>
         <p className="text-md mb-12 text-gray-300 inter max-w-4xl mx-auto">
-         The AI Summit | AI Hack isn’t just about building incredible solutions—it’s your gateway to growth, recognition, and real-world impact. Here’s what you stand to gain by participating:
+          The AI Summit | AI Hack isn’t just about building incredible solutions—it’s your gateway to growth, recognition, and real-world impact. Here’s what you stand to gain by participating:
         </p>
 
-
-        
         {/* Desktop Cards */}
-        <div className="hidden xl:flex gap-6 justify-center ">
+        <div className="hidden xl:flex gap-6 justify-center flex-wrap">
           {cardData.map((card, index) => (
-             <div key={index} className="w-[260px] h-[250px] relative">
-          {/* SVG Background */}
-          <svg
-            viewBox="0 0 264 330"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-0 w-full h-full z-0"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M24 1H192.085C205.996 1.00005 219.192 7.16275 228.122 17.8291L239.017 30.8418H239.018L253.34 49.5762C259.606 57.7726 263 67.8031 263 78.1201V306C263 318.703 252.703 329 240 329H24C11.2975 329 1 318.703 1 306V24C1 11.2975 11.2975 1 24 1Z"
-              fill="#130A2D"
-              stroke="url(#paint0_linear)"
-              strokeWidth="2"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear"
-                x1="145.125"
-                y1="0"
-                x2="307.88"
-                y2="137.877"
-                gradientUnits="userSpaceOnUse"
+            <div key={index} className="w-[210px] h-[250px] relative">
+              {/* SVG Background */}
+              <svg
+                viewBox="0 0 264 330"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 w-full h-full z-0"
+                preserveAspectRatio="none"
               >
-                <stop stopColor="#CD3A8C" />
-                <stop offset="1" stopColor="white" stopOpacity="0.06" />
-              </linearGradient>
-            </defs>
-          </svg>
+                <path
+                  d="M24 1H192.085C205.996 1.00005 219.192 7.16275 228.122 17.8291L239.017 30.8418H239.018L253.34 49.5762C259.606 57.7726 263 67.8031 263 78.1201V306C263 318.703 252.703 329 240 329H24C11.2975 329 1 318.703 1 306V24C1 11.2975 11.2975 1 24 1Z"
+                  fill="#130A2D"
+                  stroke="url(#paint0_linear)"
+                  strokeWidth="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="145.125"
+                    y1="0"
+                    x2="307.88"
+                    y2="137.877"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#CD3A8C" />
+                    <stop offset="1" stopColor="white" stopOpacity="0.06" />
+                  </linearGradient>
+                </defs>
+              </svg>
 
-          {/* Card Content */}
-          <div className="relative z-10 flex flex-col h-full p-4 gap-2">
-            <img src={card.icon} className="w-10 h-10" alt={card.title} />
-            <h3 className="text-lg font-bold text-white text-left">
-              {card.title}
-            </h3>
-            <p className="text-sm text-left inter text-gray-300">
-              {card.description}
-            </p>
-          </div>
-        </div>
+              {/* Card Content */}
+              <div className="relative z-10 flex flex-col h-full p-4 gap-2">
+                <img src={card.icon} className="w-10 h-10" alt={card.title} />
+                <h3 className="text-lg font-bold text-white text-left">{card.title}</h3>
+                <p className="text-sm text-left inter text-gray-300">{card.description}</p>
+              </div>
+            </div>
           ))}
         </div>
 
