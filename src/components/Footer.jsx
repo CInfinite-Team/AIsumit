@@ -76,7 +76,7 @@ const Footer = () => {
                 className="bg-transparent focus:outline-none pl-2 w-[55%] py-3 rounded-l-lg  "
               />
                 <div className="inline-block md:mr-2 rounded-lg h-fit overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-          <button className="px-6 py-2 w-fit rounded-lg bg-[#2B204C] text-white font-semibold text-xs whitespace-nowrap">
+          <button className="px-6 py-2 w-fit rounded-lg transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-xs whitespace-nowrap">
             notify me
           </button>
         </div>

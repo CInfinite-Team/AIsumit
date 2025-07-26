@@ -8,16 +8,18 @@ const JoinPoster = () => {
         {/* Custom SVG Shape Wrapper */}
         <div className="relative rounded-[28px]  overflow-hidden">
           
+            <div className='absolute bg-gray-50 w-52 hidden lg:block h-52 left-0 top-0' />
+
           {/* SVG Border Shape */}
           <svg
             viewBox="0 0 1440 580"
-            className="w-full h-full md:h-auto md:w-[900px] absolute top-0 left-0 z-0 pointer-events-none"
+            className="w-full h-full md:h-auto hidden lg:block md:w-[900px] absolute top-0 left-0 z-0 pointer-events-none"
             preserveAspectRatio="none"
           >
             <path
               d="M24 1H1332.24C1345.64 1 1358.4 6.72115 1367.32 16.7246L1397.09 50.1201L1428.45 88.6455C1435.27 97.0284 1439 107.507 1439 118.316V556C1439 568.703 1428.7 579 1416 579H24C11.2975 579 1 568.703 1 556V24C1.00001 11.2975 11.2975 1 24 1Z"
               fill="#2B204C"
-              stroke="url(#paint0_linear)"
+              stroke="gray"
               strokeWidth="2"
             />
             <defs>
@@ -38,14 +40,12 @@ const JoinPoster = () => {
           {/* Content */}
           <div className="relative z-10 px-8 sm:px-12 lg:px-20 py-16 flex flex-col  items-start justify-between  min-h-[400px]">
             <div className="max-w-xl">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                JOIN THE ULTIMATE
-                <br />
-                AI HACKATHON!
+              <h2 className="text-3xl md:text-5xl lg:text-5xl font-bold text-white leading-tight">
+               Join the Ultimate <br/> AI Summit | <br /> AI Hackathon
               </h2>
-              <p className="text-gray-300 mt-4">
+              {/* <p className="text-gray-300 mt-4">
                 Innovate, Compete, and Build the Future of AI
-              </p>
+              </p> */}
             </div>
 
             <div className="md:pb-6 mt-6 md:mt-0 w-full md:w-fit flex flex-col sm:flex-row gap-4 md:items-center">
@@ -54,7 +54,7 @@ const JoinPoster = () => {
                <div className="mt-8 ml-auto w-full flex flex-col sm:flex-row gap-4">
                  <a className='w-full md:w-fit' href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
                   <div className="inline-block w-full rounded-md overflow-hidden md:w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-                    <button className="px-6 py-3 w-full md:w-fit rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+                    <button className="px-6 py-3 w-full md:w-fit rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
                       Become a Partner
                     </button>
                   </div>

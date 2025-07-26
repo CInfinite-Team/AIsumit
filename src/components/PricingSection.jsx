@@ -25,7 +25,7 @@ const PricingSection = () => {
             <p className="text-4xl font-bold mt-5 md:mt-10 z-10">$299</p>
              <a href="https://lu.ma/e7ghjzhz" target="_blank" rel="noopener noreferrer">
                 <div className="inline-block mt-5 md:mt-10 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
-                  <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
+                  <button className="flex h-fit justify-center items-center gap-2 transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
                     Get Your Pass
                   </button>
                 </div>
@@ -60,7 +60,7 @@ const PricingSection = () => {
             <p className="text-4xl font-bold mt-5 md:mt-10 z-10">$999</p>
             <a href="https://lu.ma/9tzfhtbr" target="_blank" rel="noopener noreferrer">
               <div className="inline-block mt-5 md:mt-10 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400">
-                <button className="flex h-fit justify-center items-center gap-2 bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
+                <button className="flex h-fit justify-center items-center gap-2 transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm">
                   Get Your Pass
                 </button>
               </div>

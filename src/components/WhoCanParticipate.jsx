@@ -17,7 +17,7 @@ const CardWrapper = ({ children }) => (
       viewBox="0 0 704 864"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute -top-2 -left-2 w-full h-full z-0"
+      className="absolute -top-2 -left-2 w-full md:w-[95%] lg:w-[98%] xl:w-[90%] h-[99%] z-0"
       preserveAspectRatio="none"
     >
       <path
@@ -54,7 +54,7 @@ const WhoCanParticipate = () => {
         AI Hack is open to a diverse group of innovators who are eager to explore AI-driven solutions and push the boundaries of technology.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-2 w-full xl:ml-10  gap-8">
 
 
 
@@ -62,31 +62,31 @@ const WhoCanParticipate = () => {
         <CardWrapper>
 
           <div className="flex items-center gap-4 mb-6">
-            <img src={DevHus} className='w-32' alt="Developers & Hustlers" />
+            <img src={DevHus} className='w-24' alt="Developers & Hustlers" />
             <div className='absolute bottom-10 right-10 z-[-1] bg-[#31AEAE] w-44 h-44 rounded-full blur-[80px]' />
           </div>
-          <h3 className="text-xl font-semibold">Developers & Hustlers</h3>
-          <p className="text-gray-300 mb-6 text-sm md:text-base">
+          <h3 className="text-lg uppercase font-semibold">Developers & Hustlers</h3>
+          <p className="text-gray-300 md:w-[93%] inter mb-6 text-sm ">
             Are you a coder, designer, or entrepreneur ready to build cutting-edge AI solutions? Join AI Hack and turn your ideas into reality!
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center gap-3">
               <span className="rounded-full p-2 bg-cyan-400/30"><img src={developers} className='w-7' alt="Developers" /></span>
-              <span><strong>Developers:</strong> AI/ML experts solving real-world problems.</span>
+              <span className='inter text-gray-300'><strong className='inter text-white'>Developers:</strong> <br /> AI/ML experts solving real-world problems.</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="rounded-full p-2 bg-pink-400/30"><img src={designers} className='w-7' alt="Designers" /></span>
-              <span><strong>Designers:</strong> UI/UX specialists crafting intuitive AI interfaces.</span>
+               <span className='inter text-gray-300'><strong className='inter text-white'>Designers:</strong> <br /> UI/UX specialists crafting intuitive AI interfaces.</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="rounded-full p-2 bg-purple-400/30"><img src={Entrepreneurs} className='w-7' alt="Entrepreneurs" /></span>
-              <span><strong>Entrepreneurs:</strong> Innovators turning AI ideas into products.</span>
+               <span className='inter text-gray-300'><strong className='inter text-white'>Entrepreneurs:</strong> <br /> Innovators turning AI ideas into products.</span>
             </li>
           </ul>
 
           <a href="https://forms.gle/drtYKddbPGHpgTF19" target="_blank" rel="noopener noreferrer">
             <div className="inline-block mb-3 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-              <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+              <button className="px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
                 Register Your Interest
               </button>
             </div>
@@ -99,30 +99,30 @@ const WhoCanParticipate = () => {
         {/* Enterprises */}
         <CardWrapper>
           <div className="flex items-center gap-4 mb-5">
-            <img src={Enterprise} className='w-32' alt="Enterprise" />
+            <img src={Enterprise} className='w-24' alt="Enterprise" />
             <div className='absolute bottom-10 right-10 z-[-1] bg-[#31AEAE] w-44 h-44 rounded-full blur-[80px]' />
           </div>
-          <h3 className="text-xl font-semibold">Enterprises</h3>
-          <p className="text-gray-300 mb-6 text-sm md:text-base">
+          <h3 className="text-lg uppercase font-semibold">Enterprises</h3>
+          <p className="text-gray-300 mb-6 inter text-sm md:text-sm md:w-[93%]">
             Are you a company or startup looking for AI-powered innovation? AI Hack offers an opportunity for enterprises to collaborate, network, and discover fresh talent.
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center gap-3">
               <span className="rounded-full p-2 bg-cyan-400/30"><img src={TechCom} alt="Tech Companies" /></span>
-              <span><strong>Tech Companies:</strong> Integrate AI with top developer talent.</span>
+              <span className='inter text-gray-300'><strong className='inter text-white'>Tech Companies:</strong> <br /> Integrate AI with top developer talent.</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="rounded-full p-2 bg-pink-400/30"><img src={Startup} alt="Startups" /></span>
-              <span><strong>Corporates & Startups:</strong> Present challenges & engage with AI experts.</span>
+                <span className='inter text-gray-300'><strong className='inter text-white'>Corporates & Startups:</strong> <br /> Present challenges & engage with AI experts.</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="rounded-full p-2 bg-purple-400/30"><img src={investors} alt="Investors" /></span>
-              <span><strong>Investors & VCs:</strong> Scout top AI talent & emerging startups.</span>
+                <span className='inter text-gray-300'><strong className='inter text-white'>Investors & VCs:</strong> <br /> Scout top AI talent & emerging startups.</span>
             </li>
           </ul>
           <a href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
             <div className="inline-block mb-3 rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-              <button className="px-6 py-3 rounded-md bg-[#2B204C] text-white font-semibold text-sm">
+              <button className="px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
                 Become a Partner
               </button>
             </div>
