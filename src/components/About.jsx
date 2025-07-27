@@ -35,7 +35,7 @@ function About() {
             return (
               <div
                 key={label}
-                className={`inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] ${isActive ? '' : 'opacity-70'}`}
+                className={`inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] `}
               >
                 <button
                   onClick={() => setChnageImg(idx === 1)}
@@ -54,25 +54,92 @@ function About() {
           The <span className="font-bold">AI Summit</span> is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, AI Hack fuels innovation through real-world challenges, insights, and strategic collaboration.
         </p>
     :
-        <p className='inter font-light text-center inter lg:text-start text-gray-300'>The&nbsp;<strong className='font-bold inter'>AI Hack </strong>is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, AI Hack fuels innovation through real-world challenges, insights, and strategic collaboration.</p>
+        <p className='inter font-light text-center inter lg:text-start text-gray-300'>The&nbsp;<strong className='font-bold inter'>AI Hackathon </strong>is where autonomous agents, LLM tool-users, and real-world data come together to solve tomorrow’s problems—today. In this fast-paced sprint, you’ll work with the latest stacks in:</p>
 }
         {/* Bullet Points */}
-        {[
-          'Bringing together C-level executives and innovation leaders, the summit tackles key enterprise priorities — from AI integration and data-driven growth to aligning innovation with sustainability and policy.',
-          'Expect powerful keynotes, closed-door roundtables, curated networking, and actionable insights to lead in the era of intelligent transformation.',
-          "This is more than a hackathon — it's a launchpad for AI systems that are adaptive, autonomous, and enterprise-ready. Code with autonomy. Build with intelligence. Deploy with purpose.",
-        ].map((text, i) => (
-          <p
-            key={i}
+        {!ChangeImg ?
+         
+       <>
+         
+
+           <p
+           
             className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
             <span>
-              <strong className="text-white">{text.split(' ')[0]}</strong>{' '}
-              {text.split(' ').slice(1).join(' ')}
+              <strong className="text-white"> Bringing together </strong>{' '}
+            C-level executives and innovation leaders, the summit tackles key enterprise priorities — from AI integration and data-driven growth to aligning innovation with sustainability and policy.
             </span>
           </p>
-        ))}
+          <p
+            
+            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+          >
+            <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
+            <span>
+              <strong className="text-white"> Expect powerful keynotes</strong>{' '}
+            , closed-door roundtables, curated networking, and actionable insights to lead in the era of intelligent transformation.
+            </span>
+          </p>
+          <p
+            
+            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+          >
+            <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
+            <span>
+              <strong className="text-white"> Whether you're setting strategy,</strong>{' '}
+             driving transformation, or investing in the future — the AI Summit turns vision into action.
+            </span>
+          </p>
+          </>
+       :
+        
+        <>
+
+         <p
+           
+            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+          >
+            <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
+            <span>
+              <strong className="text-white"> Agentic AI </strong>{' '}
+             – Design multi-agent systems that plan, reason, and act.
+            </span>
+          </p>
+         
+          <p
+        
+            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+          >
+            <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
+            <span>
+              <strong className="text-white">Multimodal AI</strong>{' '}
+            - Use text, vision, and data to build intelligent, cross-sensory workflows.
+            </span>
+          </p>
+          <p
+           
+            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+          >
+            <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
+            <span>
+              <strong className="text-white">Tackle forward </strong>{' '}
+            - looking challenges in fintech, sustainability, and beyond.Tackle forward - looking challenges in fintech, sustainability, and beyond.
+            </span>
+          </p>
+          <p
+           
+            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+          >
+            <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
+            <span>
+              <strong className="text-white">Collaborate </strong>{' '}
+            with industry mentors and showcase deployable prototypes.
+            </span>
+          </p>
+          </>
+          }
 
         {/* Partner Button */}
         <a
