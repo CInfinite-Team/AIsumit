@@ -87,7 +87,10 @@ const Footer = () => {
 
         {/* Bottom footer bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm space-y-4 sm:space-y-0">
-          <p>&copy; 2025 AI Hackathon. Powered by <a href="https://risin.ventures">Risin Ventures.</a></p>
+         <div className='flex flex-col items-start'>
+          <p>&copy; 2025 AI Hackathon. Powered by <a  className="underline" href="https://risin.ventures">Risin Ventures.</a></p>
+          <p>Designed and Developed by <a className="underline" href="https://www.luxury-method.com/">Luxury Method</a></p>
+         </div> 
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

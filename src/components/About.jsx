@@ -50,10 +50,12 @@ function About() {
         </div>
 
         {/* Description */}
-        <h2 className="font-light text-center inter lg:text-start text-gray-300">
-          The <span className="font-bold">AI Summit</span> is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, <span className="font-bold">AI Hack</span> fuels innovation through real-world challenges, insights, and strategic collaboration.
-        </h2>
-
+       { !ChangeImg ? <p className="font-light text-center inter lg:text-start text-gray-300">
+          The <span className="font-bold">AI Summit</span> is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, AI Hack fuels innovation through real-world challenges, insights, and strategic collaboration.
+        </p>
+    :
+        <p className='inter font-light text-center inter lg:text-start text-gray-300'>The&nbsp;<strong className='font-bold inter'>AI Hack </strong>is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, AI Hack fuels innovation through real-world challenges, insights, and strategic collaboration.</p>
+}
         {/* Bullet Points */}
         {[
           'Bringing together C-level executives and innovation leaders, the summit tackles key enterprise priorities — from AI integration and data-driven growth to aligning innovation with sustainability and policy.',
