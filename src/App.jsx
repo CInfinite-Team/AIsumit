@@ -18,7 +18,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="min-h-screen [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)] w-full flex justify-center items-center">
-        <img src={Loader} alt="Loading..." className="w-1/2 object-contain" />
+        <img src={Loader} alt="Loading..." className="w-1/2 md:w-[20%] object-contain" />
       </div>
     );
   }

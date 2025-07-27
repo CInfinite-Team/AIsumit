@@ -45,7 +45,7 @@ function HeroSection() {
   return (
     <div
       ref={heroRef}
-      className='md:h-screen lg:h-[84vh] 2xl:h-[88vh] overflow-hidden flex items-center relative w-full [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)]'
+      className='h-screen lg:h-[84vh] 2xl:h-[88vh] overflow-hidden flex items-center relative w-full [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)]'
     >
       {/* Background and overlay images */}
       <img src={Ray} className='absolute top-0 left-1/2 -translate-x-1/2 w-full mix-blend-color-dodge pointer-events-none' alt='' />
@@ -64,7 +64,7 @@ function HeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className={`flex flex-col z-20 pt-10 md:pt-0 items-center lg:items-start w-full max-w-3xl md:pl-24 justify-center gap-6 text-white left-[45%] md:-translate-x-1/2 lg:translate-x-0 lg:left-0 md:absolute transition-all duration-1000 ease-out
+      <div className={`flex flex-col z-20 pt-10 md:pt-0 items-center lg:items-start w-full max-w-3xl md:pl-24 justify-center gap-8 text-white left-[45%] md:-translate-x-1/2 lg:translate-x-0 lg:left-0 md:absolute transition-all duration-1000 ease-out
         ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}>
 
@@ -91,7 +91,7 @@ function HeroSection() {
         </div>
 
         {/* Partners */}
-        <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 mt-12 w-full'>
+        {/* <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 mt-12 w-full'>
 
           <div className={`flex flex-col items-start transition-all duration-1000 delay-[200ms]
               ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -109,7 +109,7 @@ function HeroSection() {
             <span className='text-teal-300 font-semibold mb-2'>Enterprise Partner</span>
             <img src={partner3} alt='' className='w-32 rounded' />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Globe Illustration */}

@@ -47,7 +47,7 @@ function Navbar() {
         
       <div className='flex flex-col items-center justify-center'>
             <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-12" /></a>
-            <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
+            <a className='text-[10px] font-semibold' href="https://risin.ventures/" target="_blank">Powered by <u>Risin Ventures</u></a>
             </div>
        
         <button

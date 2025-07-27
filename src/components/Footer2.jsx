@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="space-y-4 ">
              <div className='flex flex-col w-fit items-center justify-center'>
                                <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-16" /></a>
-                               <a className='text-[10px] text-center ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
+                               <a className='text-[10px] text-center font-semibold' href="https://risin.ventures/" target="_blank">Powered by <u>Risin Ventures</u></a>
                                </div> 
                                     <p className="text-xs w-3/4">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
             
