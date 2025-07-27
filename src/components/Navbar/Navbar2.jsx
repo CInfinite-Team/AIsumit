@@ -35,7 +35,7 @@ useEffect(() => {
                <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
                |
                <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
-               <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-normal text-gray-200'>Rising Ventures</u></a>
+               <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold text-gray-200'>Rising Ventures</u></a>
                </div>
 
        

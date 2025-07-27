@@ -89,7 +89,7 @@ const events = {
 function EventCard({ event }) {
   const { ref, inView } = useInView({
     threshold: 0.4,
-    triggerOnce: false, // Set to true if you only want the animation once
+    triggerOnce: true, // Set to true if you only want the animation once
   });
 
   return (

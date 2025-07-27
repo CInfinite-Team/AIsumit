@@ -9,13 +9,13 @@ function About() {
   const [ChangeImg, setChnageImg] = useState(false);
 
   const { ref: leftRef, inView: leftInView } = useInView({
-    triggerOnce: false,
-    threshold: 0.4,
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   const { ref: rightRef, inView: rightInView } = useInView({
-    triggerOnce: false,
-    threshold: 0.4,
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   return (
@@ -58,11 +58,11 @@ function About() {
 
 
         {/* Description */}
-       { !ChangeImg ? <p className="font-light text-center inter lg:text-start text-gray-300">
-          The <span className="font-bold">AI Summit</span> is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, AI Hack fuels innovation through real-world challenges, insights, and strategic collaboration.
+       { !ChangeImg ? <p className="font-light text-center inter  lg:text-start text-gray-300">
+          The <span className="font-bold inter">AI Summit</span> is a premier platform for C-suite leaders and decision-makers shaping AI-driven enterprise transformation. Alongside it, AI Hack fuels innovation through real-world challenges, insights, and strategic collaboration.
         </p>
     :
-        <p className='inter font-light text-center inter lg:text-start text-gray-300'>The&nbsp;<strong className='font-bold inter'>AI Hackathon </strong>is where autonomous agents, LLM tool-users, and real-world data come together to solve tomorrow’s problems—today. In this fast-paced sprint, you’ll work with the latest stacks in:</p>
+        <p className='inter font-light text-center  inter lg:text-start text-gray-300 '>The&nbsp;<strong className='font-bold inter'>AI Hackathon </strong>is where autonomous agents, LLM tool-users, and real-world data come together to solve tomorrow’s problems—today. In this fast-paced sprint, you’ll work with the latest stacks in:</p>
 }
         {/* Bullet Points */}
         {!ChangeImg ?
@@ -72,31 +72,31 @@ function About() {
 
            <p
            
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter  leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white"> Bringing together </strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter"> Bringing together </strong>{' '}
             C-level executives and innovation leaders, the summit tackles key enterprise priorities — from AI integration and data-driven growth to aligning innovation with sustainability and policy.
             </span>
           </p>
           <p
             
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white"> Expect powerful keynotes</strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter"> Expect powerful keynotes</strong>{' '}
             , closed-door roundtables, curated networking, and actionable insights to lead in the era of intelligent transformation.
             </span>
           </p>
           <p
             
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white"> Whether you're setting strategy,</strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter"> Whether you're setting strategy,</strong>{' '}
              driving transformation, or investing in the future — the AI Summit turns vision into action.
             </span>
           </p>
@@ -107,42 +107,42 @@ function About() {
 
          <p
            
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter  leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white"> Agentic AI </strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter"> Agentic AI </strong>{' '}
              – Design multi-agent systems that plan, reason, and act.
             </span>
           </p>
          
           <p
         
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter  leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white">Multimodal AI</strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter">Multimodal AI</strong>{' '}
             - Use text, vision, and data to build intelligent, cross-sensory workflows.
             </span>
           </p>
           <p
            
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter  leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white">Tackle forward </strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter">Tackle forward </strong>{' '}
             - looking challenges in fintech, sustainability, and beyond.Tackle forward - looking challenges in fintech, sustainability, and beyond.
             </span>
           </p>
           <p
            
-            className="text-gray-300 flex items-start justify-start inter text-sm leading-relaxed"
+            className="text-gray-300 flex items-start justify-start inter  leading-relaxed"
           >
             <img src={TickBullet} className="w-4 h-4 mt-1 mr-2" alt="" />
-            <span>
-              <strong className="text-white">Collaborate </strong>{' '}
+            <span className='inter'>
+              <strong className="text-white inter">Collaborate </strong>{' '}
             with industry mentors and showcase deployable prototypes.
             </span>
           </p>
@@ -163,10 +163,10 @@ function About() {
       {/* Right Image Content */}
       <div
         ref={rightRef}
-        className={`flex-1 order-1 xl:order-2 relative transition-all duration-1000 ease-out
+        className={`flex-1 order-1 xl:order-2 relative flex justify-center w-full transition-all duration-1000 ease-out
            ${leftInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}
       >
-        <div className="rounded-2xl max-w-lg p-3">
+        <div className="rounded-2xl w-full md:max-w-lg p-3">
           <img
             src={!ChangeImg ? AiIcon : HackIcon}
             alt="AI Icon"

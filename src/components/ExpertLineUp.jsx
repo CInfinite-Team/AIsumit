@@ -134,7 +134,7 @@ const ExpertCard = ({ name, company, imageUrl, Linkedinurl }) => {
 
 const ExpertsLineup = () => {
   return (
-    <div  className="bg-[#2A2344] relative font-sans w-full min-h-screen flex items-center justify-center py-16 px-4">
+    <div  className="bg-[#2A2344] relative font-sans w-full  flex items-center justify-center py-16 px-4">
                   <div className="absolute -top-20 -translate-y-1/2" id='Experts'></div>
 
       <div className="w-full max-w-7xl mx-auto">

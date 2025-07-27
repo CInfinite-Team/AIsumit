@@ -38,7 +38,7 @@ function HeroSection() {
 
   // 👇 Animation visibility control using intersection observer
   const { ref: heroRef, inView: heroInView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.4,
   });
 

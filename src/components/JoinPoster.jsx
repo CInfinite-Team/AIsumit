@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const JoinPoster = () => {
   const { ref, inView } = useInView({
     threshold: 0.3, 
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (

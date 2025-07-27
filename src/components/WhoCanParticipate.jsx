@@ -11,7 +11,7 @@ import { useInView } from 'react-intersection-observer';
 
 const CardWrapper = ({ children }) => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.4,
   });
 
