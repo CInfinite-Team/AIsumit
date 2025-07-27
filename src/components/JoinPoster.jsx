@@ -51,18 +51,14 @@ const JoinPoster = () => {
 
             <div className="md:pb-6 mt-6 md:mt-0 w-full md:w-fit flex flex-col sm:flex-row gap-4 md:items-center">
               <div className="mt-8 ml-auto w-full flex flex-col sm:flex-row gap-4">
-                <a
-                  className="w-full md:w-fit"
-                  href="https://forms.gle/QdQturFqbxXnkNa89"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="inline-block w-full rounded-md overflow-hidden md:w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-                    <button className="px-6 py-3 w-full md:w-fit rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
-                      Become a Partner
-                    </button>
-                  </div>
-                </a>
+                <a href="https://forms.gle/QdQturFqbxXnkNa89" className='w-full md:w-fit' target="_blank" rel="noopener noreferrer">
+            <div className="relative w-full md:w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+              <div className="absolute w-full inset-0 group-hover:w-[250%] group-hover:md:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
+              <button className="relative px-6 w-full py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
+                Become a Partner
+              </button>
+            </div>
+          </a>
                 <a
                   className="w-full md:w-fit"
                   href="https://forms.gle/zhRKvXVju4QgoUix9"

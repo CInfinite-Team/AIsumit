@@ -4,23 +4,23 @@ import HeroSection from '../components/HeroSection/HeroSection'
 import CountdownTimer from '../components/CountdownTimer'
 import EventsPlanned from '../components/EventsPlanned'
 import StrategicCollaborators from '../components/StrategicCollaborators'
-import WhoCanParticipate from '../components/WhoCanParticipate'
-import ExpertLineUp from '../components/ExpertLineUp'
+// import WhoCanParticipate from '../components/WhoCanParticipate'
+// import ExpertLineUp from '../components/ExpertLineUp'
 import PricingSection from '../components/PricingSection'
-import JoinPoster from '../components/JoinPoster'
+// import JoinPoster from '../components/JoinPoster'
 import Footer2 from '../components/Footer2'
 import OurSpeakers from '../components/OurSpeakers'
 import BackToTopButton from '../components/BackToTopButton';
 // import About2 from '../components/About2'
 import { useEffect } from 'react';
 import Alchemist from '../assets/collab/Alchemist.svg';
-import HMC from '../assets/collab/HMC.png';
+// import HMC from '../assets/collab/HMC.png';
 import Kaic from '../assets/collab/Kaic.svg';
-import Meeza from '../assets/collab/Meeza.png';
-import Ooredoo from '../assets/collab/Ooredoo.png';
-import OoredooFintech from '../assets/collab/OoredooFintech.png';
-import QMIC from '../assets/collab/QMIC.png';
-import Qualetics from '../assets/collab/Qualetics.png';
+// import Meeza from '../assets/collab/Meeza.png';
+// import Ooredoo from '../assets/collab/Ooredoo.png';
+// import OoredooFintech from '../assets/collab/OoredooFintech.png';
+// import QMIC from '../assets/collab/QMIC.png';
+// import Qualetics from '../assets/collab/Qualetics.png';
 import StartupGrind from '../assets/collab/StartupGrind.svg';
 import CEOE from '../assets/CEOE.svg'
 import Hyperthing from '../assets/collab/Hyperthing.svg'

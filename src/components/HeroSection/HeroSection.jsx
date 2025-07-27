@@ -82,10 +82,14 @@ function HeroSection() {
         </h1>
 
         {/* Button */}
-        <div className={`inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r shadow-[0px_36px_72px_0px_rgba(247,70,169,0.24)] from-pink-500 via-purple-500 to-cyan-400 transition-all duration-1000 delay-[200ms]
-          ${heroInView ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}
-        `}>
-          <button onClick={handleGetPassClick} className="flex h-fit justify-center items-center gap-2 transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] px-6 py-2 rounded-md text-sm">
+        <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+          {/* Rotating Gradient Border */}
+          <div className="absolute inset-0  group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin  pointer-events-none" style={{ zIndex: 1 }} />
+          <button
+            onClick={handleGetPassClick}
+            className="relative flex h-fit justify-center items-center gap-2 bg-[#2B204C] hover:bg-[#3c3357] px-6 py-2 rounded-md text-sm text-white transition-colors duration-300 z-10"
+            style={{ zIndex: 2 }}
+          >
             Get Your Pass
           </button>
         </div>
