@@ -73,7 +73,7 @@ const useFlip = (initialValue) => {
 const CountdownTimer = ({ targetDate = "2025-09-25T16:00:00Z" }) => {
   const { ref, inView } = useInView({
     threshold: 0.4,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   const formatValue = (value) => String(value).padStart(2, "0");

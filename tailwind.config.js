@@ -7,8 +7,13 @@ export default {
     fadeIn: 'fadeIn 1s ease-out forwards',
     fadeUp: 'fadeUp 1s ease-out forwards',
     zoomIn: 'zoomIn 0.8s ease-out forwards',
+      slide: 'slide 10s linear infinite',
   },
   keyframes: {
+     slide: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
     fadeIn: {
       '0%': { opacity: '0' },
       '100%': { opacity: '1' },

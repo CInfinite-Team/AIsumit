@@ -1,21 +1,20 @@
 import React, { useState,useEffect } from 'react';
 import Sparkel from '../../assets/Sparkel.svg';
-import Logo from '../../assets/logo.svg';
+import Ai from '../../assets/ai.svg'
+import Hack from '../../assets/hack.svg'
 import { useLocation } from 'react-router-dom';
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [Quatar, setQuatar] = useState(false);
+  const[Quatar,setQuatar]=useState(false)
   const location = useLocation();
   
-  useEffect(() => {
-    if (location.pathname !== '/') {
-      setQuatar(true)
-    } else {
-      setQuatar(false)
-    }
-  }, [location.pathname]);
-
-  
+useEffect(() => {
+  if (location.pathname !== '/') {
+    setQuatar(true)
+  } else {
+    setQuatar(false)
+  }
+}, [location.pathname]);
 
   const handlenavigation = (e,id) => {
     e.preventDefault();
@@ -43,11 +42,13 @@ function Navbar() {
       </div>
 
    
-      <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
+      <div className="flex items-center justify-between px-4 md:px-16 py-4 bg-[#1D1536] text-white">
         
-      <div className='flex flex-col items-center justify-center'>
-            <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-12" /></a>
-            <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
+      <div className='flex  items-center gap-4 justify-center'>
+            <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
+            |
+            <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
+            <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold text-gray-200'>Risin Ventures</u></a>
             </div>
        
         <button
@@ -68,8 +69,9 @@ function Navbar() {
           
         </div>
          <a href="https://forms.gle/QdQturFqbxXnkNa89" className='hidden xl:block' target="_blank" rel="noopener noreferrer">
-            <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-              <button className="px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
+            <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+              <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
+              <button className="relative px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
                 Become a Partner
               </button>
             </div>
@@ -87,8 +89,9 @@ function Navbar() {
           <a onClick={() => setMenuOpen(false)} href="#Partners">Partners</a>
           <a onClick={() => setMenuOpen(false)} href="#FAQ">FAQs</a>
           <a onClick={() => setMenuOpen(false)} href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
-            <div className="inline-block rounded-md overflow-hidden w-fit p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)]">
-              <button className="px-6 py-3 rounded-md transition-colors duration-300 active:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm">
+            <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+              <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
+              <button className="relative px-6 py-3 rounded-md transition-colors duration-300 active:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
                 Become a Partner
               </button>
             </div>
