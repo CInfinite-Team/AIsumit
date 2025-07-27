@@ -54,7 +54,7 @@ function HeroSection() {
       {/* Desktop Video */}
       <div className="hidden lg:block absolute top-0 w-[48%] h-screen right-0 z-20 object-cover pointer-events-none" style={{ clipPath: 'polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%)' }}>
         <div className='w-full h-screen absolute bg-black/40' />
-        <video className="w-full h-full object-cover" muted loop autoPlay playsInline src={HeroSectionvid} />
+        <video className="w-full h-full object-cover" muted loop autoPlay playsinline src={HeroSectionvid} />
       </div>
 
       {/* Mobile Video */}

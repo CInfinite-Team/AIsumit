@@ -16,14 +16,15 @@ const JoinPoster = () => {
         ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}
     >
-      <div className="w-[900px] max-w-7xl mx-auto">
-        <div className="relative rounded-[28px] overflow-hidden">
-          <div className="absolute bg-gray-50 w-52 hidden lg:block h-52 left-0 top-0" />
+      <div className=" w-[900px] xl:w-[1000px] max-w-8xl mx-auto">
+        <div className="relative rounded-[28px] overflow-hidden min-h-[450px]">
+          {/* <div className="absolute bg-gray-50 w-52 hidden lg:block h-52 left-0 top-0" /> */}
+<div className="absolute border-l border-t border-gray-500 w-52 h-52 hidden lg:block left-0 top-0 rounded-tl-[28px] z-20" />
 
           {/* SVG Border Shape */}
           <svg
             viewBox="0 0 1440 580"
-            className="w-full h-full md:h-auto hidden lg:block md:w-[900px] absolute top-0 left-0 z-0 pointer-events-none"
+            className="w-full h-full md:h-auto hidden lg:block md:w-[900px]  xl:w-[1000px] absolute top-0 left-0 z-0 pointer-events-none"
             preserveAspectRatio="none"
           >
             <path
@@ -38,14 +39,14 @@ const JoinPoster = () => {
           <img
             src={JoinPosterImg}
             alt="AI Poster Background"
-            className="absolute inset-0 w-full h-full object-right rounded-3xl lg:h-auto md:w-[900px] p-4 object-cover z-0"
+            className="absolute inset-0 w-full h-full object-right rounded-3xl lg:h-auto md:w-[1000px] p-4 object-cover z-0"
           />
 
           {/* Content */}
           <div className="relative z-10 px-8 sm:px-12 lg:px-20 py-16 flex flex-col items-start justify-between min-h-[400px]">
             <div className="max-w-xl">
-              <h2 className="text-3xl md:text-5xl lg:text-5xl font-bold text-white leading-tight">
-                Join the Ultimate <br /> AI Summit | <br /> AI Hackathon
+              <h2 className="text-3xl md:text-5xl lg:text-5xl font-bold text-white ">
+                JOIN THE ULTIMATE <br /> AI SUMMIT | <br /> AI HACKATHON
               </h2>
             </div>
 
@@ -65,9 +66,12 @@ const JoinPoster = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-sm font-semibold text-white border-2 w-full md:w-fit border-white rounded-lg px-6 py-3 hover:bg-white/10 transition-colors duration-300 focus:outline-none">
-                    Become a Sponsor
-                  </button>
+                  <div className="relative w-full md:w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+              <div className="absolute w-full inset-0 border-2 border-white group-hover:w-[250%] group-hover:md:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] group-hover:bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
+              <button className="relative px-6 w-full py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
+                Become a Partner
+              </button>
+            </div>
                 </a>
               </div>
             </div>

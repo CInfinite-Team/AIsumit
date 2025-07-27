@@ -6,7 +6,7 @@ import Mail from '../assets/mail.svg'
 import globe from '../assets/globeico.svg'
 import locationico from '../assets/location.svg'
 import { useLocation } from 'react-router-dom';
-import Logo from '../assets/logo.svg';
+// import Logo from '../assets/logo.svg';
 
 // --- SVG Icon Components ---
 
@@ -38,9 +38,9 @@ const Footer = () => {
                            <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
                            |
                            <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
-                           <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold whitespace-nowrap text-gray-200'>Rising Ventures</u></a>
+                           <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold whitespace-nowrap text-gray-200'>Risin Ventures</u></a>
                            </div>
-                        <p className="text-xs w-3/4">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
+                        <p className="text-sm w-full inter ">AI Summit | AI Hack is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
 
              </div>
 
@@ -48,14 +48,14 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-white mb-4">Quick links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
-     <li>  <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a></li>
+              <li><a href="#about" className="hover:text-white inter transition-colors">About</a></li>
+     <li>  <a className='cursor-pointer transition-colors hover:text-white inter' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a></li>
 
-              <li><a href="#Participate" className="hover:text-white transition-colors">Who can participate?</a></li>
-              <li><a href="#Experts" className="hover:text-white transition-colors">Experts</a></li>
+              <li><a href="#Participate" className="hover:text-white inter transition-colors">Who can participate?</a></li>
+              <li><a href="#Experts" className="hover:text-white inter transition-colors">Experts</a></li>
               {/* <li><a href="#" className="hover:text-white transition-colors">Prizes</a></li> */}
-              <li><a href="#Partners" className="hover:text-white transition-colors">Partners</a></li>
-              <li><a onClick={(e)=>handlenavigation(e,'FAQ')} className="cursor-pointer hover:text-white transition-colors">FAQs</a></li>
+              <li><a href="#Partners" className="hover:text-white inter transition-colors">Partners</a></li>
+              <li><a onClick={(e)=>handlenavigation(e,'FAQ')} className="cursor-pointer hover:text-white inter transition-colors">FAQs</a></li>
             </ul>
           </div>
 
@@ -63,16 +63,16 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-white mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={Call} className='w-5' alt="" /></div> <a href="tel:+97444654622"><span>+974 4465 4622</span></a></li>
-              <li className="flex items-center gap-3"><div className='p-1 aspect-square flex items-center rounded-full bg-purple-700/20'><img src={Mail} className='w-5' alt="" /></div> <a href="mailto:info@risin.ventures"><span>info@risin.ventures</span></a></li>
-              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={globe} className='w-5' alt="" /></div> <a href="https://risin.ventures/" target="_blank" rel="noopener noreferrer"><span>www.risin.ventures</span></a></li>
-              <li className="flex items-center  gap-3"><div className=' w-7 h-7 aspect-square justify-center flex items-center rounded-full bg-purple-700/20'><img src={locationico} className='w-6 h-4' alt="" /></div> <span>Al Reem Tower, Office No 12, 3rd Floor, West Bay, Doha - Qatar</span></li>
+              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={Call} className='w-5' alt="" /></div> <a href="tel:+97444654622" className='inter'><span>+974 4465 4622</span></a></li>
+              <li className="flex items-center gap-3"><div className='p-1 aspect-square flex items-center rounded-full bg-purple-700/20'><img src={Mail} className='w-5' alt="" /></div> <a href="mailto:info@risin.ventures" className='inter'><span>info@risin.ventures</span></a></li>
+              <li className="flex items-center gap-3"><div className='p-1 rounded-full bg-purple-700/20'><img src={globe} className='w-5' alt="" /></div> <a href="https://risin.ventures/" target="_blank" rel="noopener noreferrer"><span className='inter'>www.risin.ventures</span></a></li>
+              <li className="flex items-center  gap-3"><div className=' w-7 h-7 aspect-square justify-center flex items-center rounded-full bg-purple-700/20'><img src={locationico} className='w-6 h-4' alt="" /></div> <span className='inter'>Al Reem Tower, Office No 12, 3rd Floor, West Bay, Doha - Qatar</span></li>
             </ul>
           </div>
 
           {/* Section 4: Newsletter */}
           <div>
-            <h3 className="font-bold text-white mb-4">Subscribe Our Newsletter</h3>
+            <h3 className="font-bold text-white mb-4">Join Our Newsletter</h3>
             <div className="flex border items-center justify-between pr-2  bg-white/10 border-white/20 rounded-lg overflow-hidden  w-fit text-sm focus:outline-none focus:border-pink-500">
               <input 
                 type="email" 
@@ -96,8 +96,8 @@ const Footer = () => {
           <p>Designed and Developed by <a className="underline" href="https://www.luxury-method.com/">Luxury Method</a></p>
          </div> 
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms-and-conditions" target='_blank' className="hover:text-white transition-colors">Terms & Conditions</a>
+            <a href="/privacy-policy" target='_blank' className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
       </div>

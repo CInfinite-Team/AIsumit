@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import EventDetail from './pages/EventDetail';
 import { useEffect, useState } from 'react';
 import Loader from './assets/Loading Page GIF.gif';
+import TermsAndConditions from './components/Legal/TermsAndConditions'
+import PrivacyPolicy from './components/Legal/PrivacyPolicy'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/event-detail" element={<EventDetail />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );

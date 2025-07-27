@@ -22,7 +22,7 @@ const PricingSection = () => {
           {/* Card 1 */}
           <div
             ref={card1Ref}
-            className={`bg-[#1B1332] min-h-[700px] p-4 rounded-xl w-fit h-full flex flex-col items-center justify-start transition-all duration-1000 ease-out 
+            className={`bg-[#1B1332] min-h-[650px] p-4 rounded-xl w-fit h-full flex flex-col items-center justify-start transition-all duration-1000 ease-out 
               ${card1InView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           >
             <div className='relative rounded-xl h-fit w-fit overflow-hidden text-center'>
@@ -42,7 +42,7 @@ const PricingSection = () => {
             </div>
             <div className="text-left z-10 text-sm max-w-sm md:text-base space-y-2 mt-6 text-gray-200">
               <h3 className="text-[5vw] md:text-2xl font-bold mb-2 text-center w-full text-[#CA5295] z-10">For CXO Delegates:</h3>
-              <p className='pb-2 text-sm'>CXO Delegate & Partner Delegate ticket should be viewed in one screen view instead of scrolling.</p>
+              <p className='pb-2 text-sm inter'>CXO Delegate & Partner Delegate ticket should be viewed in one screen view instead of scrolling.</p>
               {[
                 "Hear from AI experts tackling critical enterprise challenges in an exclusive collaboration zone.",
                 "Engage peers through curated CXO roundtables, workshops, and panels.",
@@ -50,7 +50,7 @@ const PricingSection = () => {
               ].map((text, i) => (
                 <p key={i} className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
                   <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" />
-                  <span>{text}</span>
+                  <span className='inter'>{text}</span>
                 </p>
               ))}
             </div>
@@ -59,10 +59,10 @@ const PricingSection = () => {
           {/* Card 2 */}
           <div
             ref={card2Ref}
-            className={`bg-[#1B1332] min-h-[700px] p-4 rounded-xl w-fit flex flex-col items-center justify-center transition-all duration-1000 ease-out 
+            className={`bg-[#1B1332] min-h-[650px] p-4 rounded-xl w-fit flex flex-col items-center justify-start transition-all duration-1000 ease-out 
               ${card2InView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           >
-            <div className='relative rounded-xl h-fit w-fit overflow-hidden text-center'>
+            <div className='relative rounded-xl h-fit w-fit overflow-hidden text-center '>
               <img src={PriceBg} className='h-72' alt="" />
               <div className='absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10'>
                 <h3 className="text-[5vw] md:text-2xl w-max font-bold mb-2 z-10">Showcase Your AI Solution</h3>
@@ -79,7 +79,7 @@ const PricingSection = () => {
             </div>
             <div className="text-left z-10 text-sm max-w-sm md:text-base space-y-2 mt-6 text-gray-200">
               <h3 className="text-[5vw] md:text-2xl text-center w-full font-bold mb-2 text-[#CA5295] z-10">For Partner Delegates:</h3>
-              <p className='pb-2 text-sm'>Partner Delegate: Designed for AI innovators to engage CXOs and turn exposure into real conversations.</p>
+              <p className='pb-2 text-sm inter'>Partner Delegate: Designed for AI innovators to engage CXOs and turn exposure into real conversations.</p>
               {[
                 "Showcase your AI in an exclusive CXO zone.",
                 "Lead strategic dialogues with CXOs in exclusive sessions.",
@@ -90,7 +90,7 @@ const PricingSection = () => {
               ].map((text, i) => (
                 <p key={i} className="text-gray-300 flex items-start justify-start text-sm leading-relaxed">
                   <img src={GreenTick} className='w-4 h-4 mt-1 mr-2' alt="" />
-                  <span>{text}</span>
+                  <span className='inter'>{text}</span>
                 </p>
               ))}
             </div>

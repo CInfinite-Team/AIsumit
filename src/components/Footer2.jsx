@@ -25,9 +25,9 @@ const Footer = () => {
                                         <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
                                         |
                                         <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
-                                        <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold whitespace-nowrap text-gray-200'>Rising Ventures</u></a>
+                                        <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold whitespace-nowrap text-gray-200'>Risin Ventures</u></a>
                                         </div>
-                                    <p className="text-xs w-3/4">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
+                                    <p className="text-xs w-full ">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
             
                          </div>
 
@@ -76,9 +76,9 @@ const Footer = () => {
         {/* Bottom footer bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm space-y-4 sm:space-y-0">
           <p>&copy; 2025 AI Hackathon. Powered by <a href="https://risin.ventures">Risin Ventures.</a></p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+        <div className="flex gap-6">
+            <a href="/terms-and-conditions" target='_blank' className="hover:text-white transition-colors">Terms & Conditions</a>
+            <a href="/privacy-policy" target='_blank' className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
       </div>
