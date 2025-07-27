@@ -1,5 +1,6 @@
 import React from 'react';
-import AI from '../assets/ai.svg'
+import Ai from '../assets/ai.svg'
+import Hack from '../assets/hack.svg'
 import Call from '../assets/call.svg'
 import Mail from '../assets/mail.svg'
 import globe from '../assets/globeico.svg'
@@ -14,16 +15,18 @@ const Footer = () => {
 
   return (
     <footer className="[background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)] text-gray-300 font-sans">
-      <div className="w-full max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-8xl mx-auto py-16 px-4 sm:px-6 lg:px-12">
         {/* Main footer content grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
           
           {/* Section 1: AI Hack */}
           <div className="space-y-4 ">
-             <div className='flex flex-col w-fit items-center justify-center'>
-                               <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-16" /></a>
-                               <a className='text-[10px] text-center font-semibold' href="https://risin.ventures/" target="_blank">Powered by <u>Risin Ventures</u></a>
-                               </div> 
+              <div className='flex  items-center gap-4 '>
+                                        <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
+                                        |
+                                        <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
+                                        <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-normal whitespace-nowrap text-gray-200'>Rising Ventures</u></a>
+                                        </div>
                                     <p className="text-xs w-3/4">AI Hackathon is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
             
                          </div>

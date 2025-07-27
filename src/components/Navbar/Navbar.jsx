@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import Sparkel from '../../assets/Sparkel.svg';
-import Logo from '../../assets/logo.svg';
+import Ai from '../../assets/ai.svg'
+import Hack from '../../assets/hack.svg'
 import { useLocation } from 'react-router-dom';
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,11 +42,13 @@ useEffect(() => {
       </div>
 
    
-      <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
+      <div className="flex items-center justify-between px-4 md:px-16 py-4 bg-[#1D1536] text-white">
         
-      <div className='flex flex-col items-center justify-center'>
-            <a href="/" target='_blank'><img src={Logo} alt="Logo" className="h-12" /></a>
-            <a className='text-[10px] ' href="https://risin.ventures/" target="_blank">Powered by <u>Rising Ventures</u></a>
+      <div className='flex  items-center gap-4 justify-center'>
+            <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
+            |
+            <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
+            <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-normal text-gray-200'>Rising Ventures</u></a>
             </div>
        
         <button
