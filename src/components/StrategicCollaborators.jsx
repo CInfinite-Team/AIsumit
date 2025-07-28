@@ -17,7 +17,7 @@ const StrategicCollaborators = ({ logos, title = 'OUR PARTNERS' }) => {
       <div className="absolute -top-40 -translate-y-1/2" id="Partners"></div>
 
       <div className="mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">{title}</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">{title}</h2>
         <p className="text-center text-gray-300 inter text-sm md:text-base max-w-xl mx-auto mb-8">
           Our global partnerships with leading technology and data firms fuel our innovation and expand our reach.
         </p>
@@ -32,12 +32,12 @@ const StrategicCollaborators = ({ logos, title = 'OUR PARTNERS' }) => {
             {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex items-center justify-center h-20 w-32 md:w-40"
+                className="flex-shrink-0 flex items-center justify-center h-20 w-32 md:w-60"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-14 aspect-video object-contain opacity-90 hover:opacity-100 transition duration-300"
+                  className="h-14 md:h-20 aspect-video object-contain opacity-90 hover:opacity-100 transition duration-300"
                 />
               </div>
             ))}

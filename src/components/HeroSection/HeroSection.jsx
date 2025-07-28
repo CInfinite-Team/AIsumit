@@ -95,11 +95,11 @@ function HeroSection() {
         </div>
 
         {/* Partners */}
-        {/* <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 mt-12 w-full'>
+        <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 mt-12 w-full'>
 
           <div className={`flex flex-col items-start transition-all duration-1000 delay-[200ms]
               ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <span className='text-teal-300 font-semibold mb-2'>Strategic Partner</span>
+            {/* <span className='text-teal-300 font-semibold mb-2'>Strategic Partner</span> */}
             <div className='flex flex-col md:flex-row gap-4 '
             >
               <img src={partner1} alt='' className='w-32 rounded' />
@@ -110,10 +110,10 @@ function HeroSection() {
           <div className={`flex flex-col items-start transition-all duration-1000 delay-[200ms]
             ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}>
-            <span className='text-teal-300 font-semibold mb-2'>Enterprise Partner</span>
+            {/* <span className='text-teal-300 font-semibold mb-2'>Enterprise Partner</span> */}
             <img src={partner3} alt='' className='w-32 rounded' />
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Globe Illustration */}

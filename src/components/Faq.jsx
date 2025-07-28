@@ -24,23 +24,23 @@ const faqData = [
     answer: 'No, there is no participation fee. The AI Hackathon is free to join, and participants will have access to technology platforms, mentors, workshops, and other resources.',
   },
   {
-    question: 'Can Al Hackathon teams engage with the CXO Summit?',
-    answer: 'Yes, hackathon participants are encouraged to network and collaborate with CXO Summit attendees. This provides an opportunity to showcase solutions, gain industry insights, and explore potential partnerships.',
+    question: 'Can Al Hackathon teams engage with the AI Summit?',
+    answer: 'Yes, hackathon participants are encouraged to network and collaborate with AI Summit attendees. This provides an opportunity to showcase solutions, gain industry insights, and explore potential partnerships.',
   },
   {
     question: 'What happens after the hackathon?',
     answer: 'Winning solutions from the hackathon are fast-tracked for enterprise adoption or pilot programs. Additionally, participants gain visibility, mentorship, and potential funding opportunities.',
   },
   {
-    question: 'Is there a separate application for the CXO Summit?',
-    answer: 'Yes, the CXO Summit has a separate registration process. Interested participants can register through the official website or contact the organizers for more details.',
+    question: 'Is there a separate application for the AI Summit?',
+    answer: 'Yes, the AI Summit has a separate registration process. Interested participants can register through the official website or contact the organizers for more details.',
   },
   {
-    question: 'How can I partner with the Al Hackathon or CXO Summit?',
+    question: 'How can I partner with the Al Hackathon or AI Summit?',
     answer: 'Partnerships are available for organizations looking to support the event through funding, use case contributions, or resource provision. To partner, reach out to the organizing team via email at info@risin.ventures or call +974 4465 4622.',
   },
   {
-    question: 'What are the benefits of attending the CXO Summit?',
+    question: 'What are the benefits of attending the AI Summit?',
     answer: 'C-level engagements with top corporates, enterprises and government officials. Attendees will also gain access to inspiring keynotes, expert panels, hands-on workshops, and networking opportunities. The summit also offers a platform to explore innovative partnerships, enhance brand visibility, and engage with top talent.',
   },
   {
@@ -117,7 +117,7 @@ const Faq = () => {
 
       <div className="w-full max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">FAQs</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">FAQs</h2>
           <p className="text-gray-300 inter mt-4 max-w-2xl mx-auto">
             We are offering cash prizes, incubation opportunities, and exclusive mentorship sessions to help winners take their AI innovations to the next level!
           </p>

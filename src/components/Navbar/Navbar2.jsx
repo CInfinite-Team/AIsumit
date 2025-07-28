@@ -29,13 +29,13 @@ useEffect(() => {
       </div>
 
    
-      <div className="flex items-center justify-between px-4 md:px-20 py-4 bg-[#1D1536] text-white">
+      <div className="flex items-center justify-between px-4 md:px-16 py-4 bg-[#1D1536] text-white">
         
     <div className='flex  items-center gap-4 justify-center'>
                <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
                |
                <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
-               <a className=' text-[10px] md:text-xs font-thin ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold text-gray-200'>Risin Ventures</u></a>
+               <a className=' text-[11px]  ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold text-gray-200'>Risin Ventures</u></a>
                </div>
 
        
