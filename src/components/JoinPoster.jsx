@@ -69,7 +69,7 @@ const JoinPoster = () => {
                   <div className="relative w-full md:w-fit group rounded-md p-[2px] hover:overflow-hidden ">
               <div className="absolute w-full inset-0 border-2 border-white group-hover:w-[250%] group-hover:md:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] group-hover:bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
               <button className="relative px-6 w-full py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
-                Become a Partner
+                Become a Sponsor
               </button>
             </div>
                 </a>
