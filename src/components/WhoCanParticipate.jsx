@@ -83,7 +83,7 @@ const WhoCanParticipate = () => {
             <p className="text-gray-300 w-[92%]  xl:w-auto inter   text-sm ">
               Are you a coder, designer, or entrepreneur ready to build cutting-edge AI solutions? Join AI Hack and turn your ideas into reality!
             </p>
-            <ul className="space-y-2 ">
+            <ul className="space-y-2 pb-2">
               <li className="flex items-center gap-3">
                 <span className="rounded-full p-2 bg-cyan-400/30"><img src={developers} className='w-5' alt="Developers" /></span>
                 <span className='inter text-gray-300 text-sm'><strong className='inter text-white'>Developers:</strong> <br /> AI/ML experts solving real-world problems.</span>
@@ -121,7 +121,7 @@ const WhoCanParticipate = () => {
             <p className="text-gray-300  inter text-sm md:text-sm md:w-[93%] xl:w-auto ">
               Are you a company or startup looking for AI-powered innovation? AI Hack offers an opportunity for enterprises to collaborate, network, and discover fresh talent.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 pb-2">
               <li className="flex items-center gap-3">
                 <span className="rounded-full p-2 bg-cyan-400/30"><img src={TechCom} className='w-5' alt="Tech Companies" /></span>
                 <span className='inter text-gray-300 text-sm'><strong className='inter text-white'>Tech Companies:</strong> <br /> Integrate AI with top developer talent.</span>
