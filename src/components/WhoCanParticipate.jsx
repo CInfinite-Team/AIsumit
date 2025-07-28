@@ -29,7 +29,7 @@ const CardWrapper = ({ children }) => {
         viewBox="0 0 704 864"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -top-2 -left-2 w-full md:w-[95%] lg:w-[98%] xl:w-fit h-[95%] z-0"
+        className="absolute -top-2 -left-10 w-full md:w-[95%] lg:w-[98%] xl:w-[105%] h-[95%] z-0"
         preserveAspectRatio="none"
       >
         <path
@@ -52,7 +52,7 @@ const CardWrapper = ({ children }) => {
           </linearGradient>
         </defs>
       </svg>
-      <div className="relative z-10 p-3 py-2 gap-4 justify-items-end flex flex-col justify-center h-full">
+      <div className="relative z-10 p-3 py-2 pr-8 gap-2 justify-items-end flex flex-col justify-center h-full">
         {children}
       </div>
     </div>
@@ -71,7 +71,7 @@ const WhoCanParticipate = () => {
           AI Hack is open to a diverse group of innovators who are eager to explore AI-driven solutions and push the boundaries of technology.
         </p>
 
-        <div className="grid lg:grid-cols-2 w-fit mx-auto xl:mx-[10vw] 2xl:max-w-screen-xl xl:pl-10 2xl:pl-40 2xl:mx-auto gap-6 items-stretch">
+        <div className="grid lg:grid-cols-2 w-fit mx-auto 2xl:mx-[10vw]  xl:pl-10 2xl:pl-40  gap-20 items-stretch">
           {/* Developers & Hustlers */}
           <CardWrapper>
 
@@ -80,7 +80,7 @@ const WhoCanParticipate = () => {
               {/* <div className='absolute bottom-0 right-0 z-[-1] bg-[#31AEAE] w-44 h-44 rounded-full blur-[80px]' /> */}
             </div>
             <h3 className="text-lg uppercase font-semibold">Developers & Hustlers</h3>
-            <p className="text-gray-300 w-[93%] xl:w-[75%] inter 2xl:w-[40%]  text-sm ">
+            <p className="text-gray-300 w-[93%] xl:w-auto inter   text-sm ">
               Are you a coder, designer, or entrepreneur ready to build cutting-edge AI solutions? Join AI Hack and turn your ideas into reality!
             </p>
             <ul className="space-y-2 ">
@@ -102,7 +102,7 @@ const WhoCanParticipate = () => {
               <div className="relative mb-10 lg:mb-8 xl:mb-3 w-fit group rounded-md p-[2px] hover:overflow-hidden ">
               <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
               <button className="relative px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
-                Register Your Interest
+                Apply Now
               </button>
             </div>
             </a>
@@ -118,7 +118,7 @@ const WhoCanParticipate = () => {
               {/* <div className='absolute bottom-10 right-10 z-[-1] bg-[#31AEAE] w-44 h-44 rounded-full blur-[80px]' /> */}
             </div>
             <h3 className="text-lg uppercase font-semibold">Enterprises</h3>
-            <p className="text-gray-300  inter text-sm md:text-sm md:w-[93%] xl:w-[75%] 2xl:w-[40%]">
+            <p className="text-gray-300  inter text-sm md:text-sm md:w-[93%] xl:w-auto ">
               Are you a company or startup looking for AI-powered innovation? AI Hack offers an opportunity for enterprises to collaborate, network, and discover fresh talent.
             </p>
             <ul className="space-y-2">

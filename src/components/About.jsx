@@ -25,7 +25,7 @@ function About() {
       {/* Left Text Content */}
       <div
         ref={leftRef}
-        className={`flex-1 order-2 xl:order-1 items-center lg:items-start flex flex-col gap-6 max-w-2xl transition-all duration-1000 ease-out
+        className={`flex-1 order-2 xl:order-1 items-start flex flex-col gap-6 max-w-2xl transition-all duration-1000 ease-out
           ${leftInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-1/2'}`}
       >
         {/* Toggle Buttons */}
@@ -150,14 +150,22 @@ function About() {
           }
 
         {/* Partner Button */}
-        <a href="https://forms.gle/QdQturFqbxXnkNa89" className='hidden xl:block' target="_blank" rel="noopener noreferrer">
+       {!ChangeImg ? <a href="https://forms.gle/QdQturFqbxXnkNa89"  target="_blank" rel="noopener noreferrer">
             <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
               <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
               <button className="relative px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
                 Become a Partner
               </button>
             </div>
-          </a>
+          </a> :
+           <a href="https://forms.gle/3ufXEarhNCESUR3TA" target="_blank" rel="noopener noreferrer">
+            <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+              <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
+              <button className="relative px-6 py-3 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-sm z-10" style={{ zIndex: 2 }}>
+                Apply Now
+              </button>
+            </div>
+          </a>}
       </div>
 
       {/* Right Image Content */}

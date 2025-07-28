@@ -185,14 +185,20 @@ export default function AiSpotlight() {
           </Swiper>
 
           {/* Nav Buttons */}
-          <div className="flex justify-center gap-3 mt-6">
-            <button className="swiper-button-prev-mobile p-2 rounded-md bg-black hover:bg-gradient-to-r from-purple-400 to-pink-500 text-white shadow-md">
-              ←
-            </button>
-            <button className="swiper-button-next-mobile p-2 rounded-md bg-black hover:bg-gradient-to-r from-purple-400 to-pink-500 text-white shadow-md">
-              →
-            </button>
-          </div>
+        
+
+            <div className='flex items-center xl:hidden justify-center gap-4 mt-7'>
+           <button className="swiper-button-prev-mobile    xl:hidden  z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:bg-white/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+          </button>
+           <button className="swiper-button-next-mobile  xl:hidden z-10 p-2 rounded-md bg-[#2A2344] hover:bg-gradient-to-r from-pink-500 to-blue-500  border-2 border-white/50 hover:opacity-90 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </div>
         </div>
       </div>
     </section>
