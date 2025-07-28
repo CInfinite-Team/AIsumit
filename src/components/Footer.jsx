@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Bottom footer bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm space-y-4 sm:space-y-0">
          <div className='flex flex-col items-start'>
-          <p className='inter'>&copy; 2025 AI Summit | AI Hackathon. Powered by <a  className="underline inter font-semibold" href="https://risin.ventures">Risin Ventures.</a></p>
+          <p className='inter'>&copy; 2025 AI Summit | AI Hackathon, Powered by <a  className="underline inter font-semibold" href="https://risin.ventures">Risin Ventures.</a></p>
           <p className='inter'>Designed and Developed by <a className="underline inter font-semibold" href="https://www.luxury-method.com/">Luxury Method</a></p>
          </div> 
           <div className="flex gap-6">
