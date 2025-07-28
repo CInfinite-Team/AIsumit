@@ -18,7 +18,7 @@ const CardWrapper = ({ children }) => {
   return (
     <div
       ref={ref}
-      className={`relative transition-all  duration-700 ease-out transform ${
+      className={`relative transition-all 2xl:-translate-x-20  duration-700 ease-out transform ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
       }`}
     >

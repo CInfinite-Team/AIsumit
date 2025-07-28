@@ -82,7 +82,7 @@ const OurSpeakers = () => {
           <div className="absolute -top-20 -translate-y-[80%]" id="Experts"></div>
             <div className="w-full max-w-7xl mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase">OUR SPEAKERS</h2>
+                    <h2 className="text-3xl md:text-4xl text-center font-bold text-white tracking-widest uppercase">OUR SPEAKERS</h2>
                     <p className="text-gray-300 inter mt-2">Meet our industry leaders & AI gurus!</p>
                 </div>
 

@@ -64,7 +64,7 @@ function HeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className={`flex flex-col z-20 pt-10 md:pt-0 items-center lg:items-start w-full max-w-3xl md:pl-24 justify-center gap-8 text-white left-[45%] md:-translate-x-1/2 lg:translate-x-0 lg:left-0 md:absolute transition-all duration-1000 ease-out
+      <div className={`flex flex-col z-20 -translate-y-10 md:translate-y-0 md:pt-0 items-center lg:items-start w-full max-w-3xl md:pl-24 justify-center gap-4 md:gap-8 text-white left-[45%] md:-translate-x-1/2 lg:translate-x-0 lg:left-0 md:absolute transition-all duration-1000 ease-out
         ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}>
 
@@ -95,7 +95,7 @@ function HeroSection() {
         </div>
 
         {/* Partners */}
-        <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 mt-12 w-full'>
+        <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 md:gap-8 mt-4 md:mt-12 w-full'>
 
           <div className={`flex flex-col items-start transition-all duration-1000 delay-[200ms]
               ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
