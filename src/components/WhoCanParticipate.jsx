@@ -18,7 +18,7 @@ const CardWrapper = ({ children }) => {
   return (
     <div
       ref={ref}
-      className={`relative transition-all duration-700 ease-out transform ${
+      className={`relative transition-all  duration-700 ease-out transform ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
       }`}
     >
@@ -29,7 +29,7 @@ const CardWrapper = ({ children }) => {
         viewBox="0 0 704 864"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -top-2 -left-10 w-full md:w-[95%] lg:w-[98%] xl:w-[105%] h-[95%] z-0"
+        className="absolute -top-2 xl:-left-1 w-full md:w-[95%] lg:w-[98%] xl:w-[105%] h-[95%] z-0"
         preserveAspectRatio="none"
       >
         <path
@@ -52,7 +52,7 @@ const CardWrapper = ({ children }) => {
           </linearGradient>
         </defs>
       </svg>
-      <div className="relative z-10 p-3 py-2 pr-8 gap-2 justify-items-end flex flex-col justify-center h-full">
+      <div className="relative z-10 p-3 py-2 pr-10 md:pr-8  gap-2 justify-items-end flex flex-col justify-center h-full">
         {children}
       </div>
     </div>
@@ -71,16 +71,16 @@ const WhoCanParticipate = () => {
           AI Hack is open to a diverse group of innovators who are eager to explore AI-driven solutions and push the boundaries of technology.
         </p>
 
-        <div className="grid lg:grid-cols-2 w-fit mx-auto 2xl:mx-[10vw]  xl:pl-10 2xl:pl-40  gap-20 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-fit mx-auto 2xl:mx-[10vw]  xl:pl-10 2xl:pl-40  gap-20 items-stretch">
           {/* Developers & Hustlers */}
           <CardWrapper>
 
-            <div className="flex items-center xl:-translate-y-6  ">
+            <div className="flex items-center  xl:-translate-y-6  ">
               <img src={DevHus} className='w-24' alt="Developers & Hustlers" />
               {/* <div className='absolute bottom-0 right-0 z-[-1] bg-[#31AEAE] w-44 h-44 rounded-full blur-[80px]' /> */}
             </div>
             <h3 className="text-lg uppercase font-semibold">Developers & Hustlers</h3>
-            <p className="text-gray-300 w-[93%] xl:w-auto inter   text-sm ">
+            <p className="text-gray-300 w-[92%]  xl:w-auto inter   text-sm ">
               Are you a coder, designer, or entrepreneur ready to build cutting-edge AI solutions? Join AI Hack and turn your ideas into reality!
             </p>
             <ul className="space-y-2 ">
