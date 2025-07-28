@@ -42,7 +42,14 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// --- API Endpoint for Newsletter Subscription ---
+// --- API Endpoints ---
+
+// Root endpoint to check if the server is running
+app.get('/', (req, res) => {
+  res.status(200).send('Welcome to AI Summit Server');
+});
+
+// API Endpoint for Newsletter Subscription
 // Your Vite application will make a POST request to this '/send-email' endpoint
 // with a body like: { "recipient": "new.subscriber@example.com" }
 app.post('/send-email', async (req, res) => {
@@ -118,7 +125,8 @@ app.post('/send-email', async (req, res) => {
 // --- Start the Server ---
 app.listen(PORT, () => {
   console.log(`📧 Server is running on http://localhost:${PORT}`);
-  console.log('Waiting for requests to /send-email...');
+  console.log(`Navigate to http://localhost:${PORT} in a browser to see the welcome message.`);
+  console.log('Waiting for POST requests to /send-email...');
 });
 
 // === HOW TO RUN THIS SERVER ===
