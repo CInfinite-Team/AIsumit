@@ -20,16 +20,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:justify-items-center gap-8 mb-12">
           
           {/* Section 1: AI Hack */}
-          <div className="space-y-4 ">
-              <div className='flex  items-center gap-4 '>
-                                        <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
-                                        |
-                                        <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
-                                        <a className=' text-[11px]  text-white ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold whitespace-nowrap text-gray-200'>Risin Ventures</u></a>
-                                        </div>
-                        <p className="text-sm w-full inter ">AI Summit | AI Hack is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
-            
-                         </div>
+         <div className="space-y-4 ">
+                     <div className='flex  items-center gap-4 '>
+                                   <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16 2xl:h-28" /></a>
+                                   |
+                                   <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16 2xl:h-28" /></a>
+                                   <a className=' text-[11px] font-normal text-white' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold whitespace-nowrap text-gray-200'>Risin Ventures</u></a>
+                                   </div>
+                                <p className="text-sm w-full inter ">AI Summit | AI Hack is a premier event where developers, entrepreneurs, and enterprises collaborate to solve real-world problems using AI.</p>
+        
+                     </div>
 
           {/* Section 2: Quick Links */}
           <div>
