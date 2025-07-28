@@ -17,7 +17,7 @@ const StrategicCollaborators = ({ logos, title = 'OUR PARTNERS' }) => {
       <div className="absolute -top-40 -translate-y-1/2" id="Partners"></div>
 
       <div className="mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">{title}</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold text-center mb-2">{title}</h2>
         <p className="text-center text-gray-300 inter text-sm md:text-base max-w-xl mx-auto mb-8">
           Our global partnerships with leading technology and data firms fuel our innovation and expand our reach.
         </p>

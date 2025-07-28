@@ -120,7 +120,7 @@ const CountdownTimer = ({ targetDate = "2025-09-25T16:00:00Z" }) => {
       className={`bg-[#2b1c50] flex flex-col items-center justify-center text-white font-sans py-20 p-4 transition-all duration-1000 ease-out
       ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1/2'}`}
     >
-      <h2 className="text-4xl font-bold uppercase mb-6">Program Starts In</h2>
+      <h2 className="text-3xl md:text-4xl text-center font-bold uppercase mb-6">Program Starts In</h2>
       <div className="flex items-center justify-center">
         {units.map((unit, index) => (
           <React.Fragment key={unit.label}>
