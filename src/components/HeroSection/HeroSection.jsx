@@ -6,12 +6,12 @@ import partner2 from '../../assets/partner2.svg';
 import partner3 from '../../assets/partner3.svg';
 import HeroSectionvid from '../../assets/HeroSection.mp4';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect ,useState} from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function HeroSection() {
   const location = useLocation();
-
+const [isQATAR, setIsQATAR] = useState(false);
   useEffect(() => {
     if (window.location.hash) {
       const id = window.location.hash.replace('#', '');
@@ -22,11 +22,14 @@ function HeroSection() {
         }, 100);
       }
     }
+    if(location.pathname==='/event-detail'){
+      setIsQATAR(true);
+    }
   }, []);
 
   const handleGetPassClick = (e) => {
     e.preventDefault();
-    if (location.pathname === '/event-detail') {
+    if (isQATAR) {
       const pricingSection = document.getElementById('pricing');
       if (pricingSection) {
         pricingSection.scrollIntoView({ behavior: 'smooth' });
@@ -69,8 +72,9 @@ function HeroSection() {
       `}>
 
         {/* Subheading */}
-        <p className='font-medium text-xs md:text-xl text-center lg:text-left transition-opacity duration-1000 delay-[200ms]'>
-          QATAR | 25TH - 27TH SEPTEMBER | QSTP, DOHA
+
+        <p className={` ${isQATAR ? 'opacity-100 ' : 'opacity-0 '} font-medium text-xs md:text-xl text-center lg:text-left transition-opacity duration-1000 delay-[200ms]`}>
+          QATAR | 25TH - 27TH OCTOBER | QSTP, DOHA
         </p>
 
         {/* Heading */}
