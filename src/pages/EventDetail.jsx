@@ -111,7 +111,7 @@ const logos = [
     {/* <About2 /> */}
     <CountdownTimer/>
     <EventsPlanned/>
-    <StrategicCollaborators title='STRATEGIC COLLABORATORS' logos={logos}/>
+    <StrategicCollaborators className='h-20' title='STRATEGIC COLLABORATORS' logos={logos}/>
     {/* <OurSpeakers/> */}
 
     {/* <WhoCanParticipate/> */}

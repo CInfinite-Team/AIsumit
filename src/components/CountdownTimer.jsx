@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 const Separator = () => (
   <div className="relative w-6 h-40 flex items-center justify-center">
     <div className="w-[2px] h-full bg-opacity-20 relative">
-      <div className="absolute top-1/2 -mt-10 w-2 h-2 rounded-full bg-white left-1/2 -ml-1"></div>
-      <div className="absolute top-1/2 mt-0 w-2 h-2 rounded-full bg-white left-1/2 -ml-1"></div>
+      <div className="absolute top-1/2 -mt-9 w-[6px] h-[6px] md:w-2 md:h-2 rounded-full bg-white left-1/2 -ml-1"></div>
+      <div className="absolute top-1/2 -mt-1 w-[6px] h-[6px] md:w-2 md:h-2 rounded-full bg-white left-1/2 -ml-1"></div>
     </div>
   </div>
 );
@@ -36,9 +36,9 @@ const FlipUnit = ({ current, next, label, isFlipping }) => {
           </div>
         )}
 
-        <div className="absolute w-3 h-3 bg-[#1D1536] rounded-full top-1/2 -mt-1.5 -left-1.5 z-10"></div>
-        <div className="absolute w-full h-1 bg-[#1D1536] top-1/2 -mt-0.5 z-10"></div>
-        <div className="absolute w-3 h-3 bg-[#1D1536] rounded-full top-1/2 -mt-1.5 -right-1.5 z-10"></div>
+        <div className="absolute w-2 md:w-3 h-2 md:h-3 bg-[#1D1536] rounded-full top-1/2 -mt-1.5 -left-1 md:-left-1.5 z-10"></div>
+        <div className="absolute w-full h-[2px] md:h-1 bg-[#1D1536] top-1/2 -mt-[3px] md:-mt-0.5 z-10"></div>
+        <div className="absolute w-2 md:w-3 h-2 md:h-3 bg-[#1D1536] rounded-full top-1/2 -mt-1.5 -right-1 md:-right-1.5 z-10"></div>
       </div>
       <p className="text-[11px] md:text-base mt-4 font-semibold tracking-widest text-gray-300">{label}</p>
     </div>

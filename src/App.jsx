@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Loader from './assets/Loading Page GIF.gif';
 import TermsAndConditions from './components/Legal/TermsAndConditions'
 import PrivacyPolicy from './components/Legal/PrivacyPolicy'
-
+import ComingSoon from './components/ComingSoon'
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -29,7 +29,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/event-detail" element={<EventDetail />} />
+        <Route path="/qatar" element={<EventDetail />} />
+        <Route path="/oman" element={<ComingSoon />} />
+        <Route path="/ksa" element={<ComingSoon />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>

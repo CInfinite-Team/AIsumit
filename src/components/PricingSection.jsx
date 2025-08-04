@@ -11,8 +11,8 @@ const PricingSection = () => {
     <section className="bg-gradient-to-b relative from-[#1B1036] to-[#2C1A4D] py-16 text-white">
       <div className="absolute -top-20 -translate-y-[80%]" id="pricing"></div>
       <div className="mx-auto px-4">
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
-          WHY ATTEND AI SUMMIT?
+        <h2 className="text-center text-3xl uppercase md:text-4xl font-bold mb-4">
+          Join AI Summit
         </h2>
         <p className="text-center inter max-w-2xl mx-auto text-sm md:text-base text-gray-300 mb-12">
           Join CXOs and AI partners in a focused space for innovation, live showcases, and strategic networking. Discover solutions, spark collaborations, and drive enterprise transformation—together.
@@ -30,13 +30,15 @@ const PricingSection = () => {
               <div className='absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10'>
                 <h3 className="text-[5vw] md:text-2xl w-max font-bold mb-2 z-10">Join the Exclusive CXO Zone</h3>
                 <p className="text-4xl font-bold mt-5 md:mt-10 z-10">$299</p>
-                <a href="https://lu.ma/e7ghjzhz" target="_blank" className='flex items-center justify-center' rel="noopener noreferrer">
+                <a href="https://lu.ma/e7ghjzhz" target="_blank" className='flex flex-col gap-2 inter items-center justify-center' rel="noopener noreferrer">
                   <div className="relative w-fit group rounded-md p-[2px] mt-5 md:mt-10 hover:overflow-hidden">
                     <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
                     <button className="relative z-10 flex h-fit justify-center items-center gap-2 transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm text-white">
                       Get Your Pass
                     </button>
+                   
                   </div>
+                   On 26th October
                 </a>
               </div>
             </div>
@@ -67,13 +69,14 @@ const PricingSection = () => {
               <div className='absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10'>
                 <h3 className="text-[5vw] md:text-2xl w-max font-bold mb-2 z-10">Showcase Your AI Solution</h3>
                 <p className="text-4xl font-bold mt-5 md:mt-10 z-10">$999</p>
-                <a href="https://lu.ma/9tzfhtbr" target="_blank" className='flex items-center justify-center' rel="noopener noreferrer">
+                <a href="https://lu.ma/9tzfhtbr" target="_blank" className='flex flex-col gap-2 inter items-center justify-center' rel="noopener noreferrer">
                   <div className="relative w-fit group rounded-md p-[2px] mt-5 md:mt-10 hover:overflow-hidden">
                     <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
                     <button className="relative z-10 flex h-fit justify-center items-center gap-2 transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] px-6 py-2 md:px-8 md:py-3 rounded-md text-sm text-white">
                       Get Your Pass
                     </button>
                   </div>
+                   On 26th October
                 </a>
               </div>
             </div>

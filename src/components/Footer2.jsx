@@ -6,7 +6,9 @@ import Call from '../assets/call.svg';
 import Mail from '../assets/mail.svg';
 import globe from '../assets/globeico.svg';
 import locationico from '../assets/location.svg';
-import Logo from '../assets/logo.svg';
+import instagram from '../assets/instagram.svg';
+import Linkedin  from '../assets/Linkedin.svg';
+import Youtube  from '../assets/Youtube.svg';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -115,7 +117,7 @@ const Footer = () => {
           </div>
 
           {/* Section 4: Newsletter */}
-          <div>
+          <div className='flex flex-col gap-5 '>
             <h3 className="font-bold text-white mb-4">Join Our Newsletter</h3>
             <div className="flex border items-center justify-between pr-2 bg-white/10 border-white/20 rounded-lg overflow-hidden w-fit text-sm focus:outline-none focus:border-pink-500">
               <input
@@ -136,6 +138,11 @@ const Footer = () => {
                 </button>
               </div>
             </div>
+                <div className='flex gap-4 items-center'>
+                 <a href="https://www.instagram.com/risin.ventures/ " target="_blank"> <img src={instagram} className='w-8' alt="instagram" /></a>
+                <a href="https://www.linkedin.com/company/risin-ventures/" target='_blank'>  <img src={Linkedin} className='w-5' alt="Linkedin" /></a>
+                 <a href="https://www.youtube.com/channel/UC2PZRHE-2nvkqRZPTPK9wNQ/featured" target='_blank'> <img src={Youtube} className='w-7' alt="Youtube" /></a>
+                </div>
           </div>
         </div>
 

@@ -56,3 +56,5 @@ body{
   /* Make the active dot fully opaque and wider */
   @apply opacity-100 w-4;
 }
+
+

@@ -22,7 +22,7 @@ const [isQATAR, setIsQATAR] = useState(false);
         }, 100);
       }
     }
-    if(location.pathname==='/event-detail'){
+    if(location.pathname==='/qatar'){
       setIsQATAR(true);
     }
   }, []);
@@ -35,7 +35,7 @@ const [isQATAR, setIsQATAR] = useState(false);
         pricingSection.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      window.open('/event-detail#pricing', '_blank', 'noopener,noreferrer');
+      window.open('/qatar#pricing', '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -48,7 +48,7 @@ const [isQATAR, setIsQATAR] = useState(false);
   return (
     <div
       ref={heroRef}
-      className='h-screen lg:h-[84vh] 2xl:h-[88vh] overflow-hidden flex items-center relative w-full [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)]'
+      className='min-h-screen  lg:h-[84vh] 2xl:h-[88vh] overflow-hidden flex items-center relative w-full [background:linear-gradient(180deg,#2B204C_0%,#160C35_50%)]'
     >
       {/* Background and overlay images */}
       <img src={Ray} className='absolute top-0 left-1/2 -translate-x-1/2 w-full mix-blend-color-dodge pointer-events-none' alt='' />
@@ -67,7 +67,7 @@ const [isQATAR, setIsQATAR] = useState(false);
       </div>
 
       {/* Main Content */}
-      <div className={`flex flex-col z-20 -translate-y-10 md:translate-y-0 md:pt-0 items-center lg:items-start w-full max-w-3xl md:pl-24 justify-center gap-4 md:gap-8 text-white left-[45%] md:-translate-x-1/2 lg:translate-x-0 lg:left-0 md:absolute transition-all duration-1000 ease-out
+      <div className={`flex flex-col z-20 -translate-y-10 md:translate-y-0 md:pt-0 items-center lg:items-start w-full max-w-3xl lg:max-w-2xl xl:max-w-3xl md:pl-24 justify-center gap-4 md:gap-8 text-white left-[45%] md:-translate-x-1/2 lg:translate-x-0 lg:left-0 md:absolute transition-all duration-1000 ease-out
         ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}>
 
@@ -86,6 +86,7 @@ const [isQATAR, setIsQATAR] = useState(false);
         </h1>
 
         {/* Button */}
+        <div className='flex gap-5 justify-between w-full px-2 lg:pr-12 xl:pr-4 md:pr-4'>
         <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
           {/* Rotating Gradient Border */}
           <div className="absolute inset-0  group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin  pointer-events-none" style={{ zIndex: 1 }} />
@@ -97,6 +98,18 @@ const [isQATAR, setIsQATAR] = useState(false);
             Get Your Pass
           </button>
         </div>
+        <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">
+          {/* Rotating Gradient Border */}
+          <div className="absolute inset-0  group-hover:w-[210%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin  pointer-events-none" style={{ zIndex: 1 }} />
+          <button
+            onClick={handleGetPassClick}
+            className="relative flex h-fit justify-center items-center gap-2 bg-[#2B204C] hover:bg-[#3c3357] px-6 py-2 rounded-md text-sm text-white transition-colors duration-300 z-10"
+            style={{ zIndex: 2 }}
+          >
+            Apply Now
+          </button>
+        </div>
+        </div>
 
         {/* Partners */}
         <div className='flex flex-col md:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 md:gap-8 mt-4 md:mt-12 w-full'>
@@ -106,7 +119,7 @@ const [isQATAR, setIsQATAR] = useState(false);
             {/* <span className='text-teal-300 font-semibold mb-2'>Strategic Partner</span> */}
             <div className='flex flex-col md:flex-row gap-4 '
             >
-              <img src={partner1} alt='' className='w-32 rounded' />
+              <img src={partner1} alt='' className='w-[140px] rounded' />
               <img src={partner2} alt='' className='w-32 rounded' />
             </div>
           </div>

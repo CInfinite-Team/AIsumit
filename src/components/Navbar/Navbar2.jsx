@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import Sparkel from '../../assets/Sparkel.svg';
 import Ai from '../../assets/ai.svg'
 import Hack from '../../assets/hack.svg'
@@ -21,11 +21,11 @@ useEffect(() => {
     <div className="w-full sticky top-0 z-50 flex flex-col">
      
       <div className="flex flex-wrap items-center justify-center md:justify-start py-2 text-white gap-4 md:gap-5 px-4 md:px-20 bg-gradient-to-r from-[#7356CB] via-[#835ACB] to-[#9E4CC9]">
-        <a href="/event-detail" target='_blank' className={`mosserate text-lg md:text-lg font-extrabold ${Quatar ? 'text-[#58fff7]' : ''}`}>QATAR</a>
+        <a href="/qatar" target='_blank' className={`mosserate text-lg md:text-lg font-extrabold ${Quatar ? 'text-[#58fff7]' : ''}`}>QATAR</a>
         <img src={Sparkel} alt="" className="h-4 w-4" />
-        <a href="#" className="mosserate text-lg md:text-lg font-extrabold">OMAN</a>
+        <a href="/oman" className="mosserate text-lg md:text-lg font-extrabold">OMAN</a>
         <img src={Sparkel} alt="" className="h-4 w-4" />
-        <a href="#" className="mosserate text-lg md:text-lg font-extrabold">KSA</a>
+        <a href="/ksa" className="mosserate text-lg md:text-lg font-extrabold">KSA</a>
       </div>
 
    
