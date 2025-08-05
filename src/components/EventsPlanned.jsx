@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-const days = ["Day 1", "Day 2", "Day 3"];
+const days = ["24th OCT", "25th OCT", "26th OCT"];
 const events = {
   // ... (your events data remains unchanged)
-  "Day 1": [
+  "24th OCT": [
  {
  time: "1:00pm - 3:00pm",
  title: "Opening Ceremony, Use Case Announcement & Team Formation",
@@ -27,7 +27,7 @@ Linkbtn: 'https://forms.gle/3ufXEarhNCESUR3TA',
  highlights: ["Introductory technical workshops (e.g., AI/ML tools, APIs)", "Ice-breaking networking event"],
  },
  ],
-"Day 2": [
+"25th OCT": [
 {
  time: "10:00am - 12:00pm",
  title: "Workshops & Mentoring",
@@ -47,7 +47,7 @@ Linkbtn: 'https://forms.gle/3ufXEarhNCESUR3TA',
  highlights: ["Presentation skills workshop", "Pitch rehearsal with mentors"],
  },
  ],
- "Day 3": [
+ "26th OCT": [
  {
   time: "9:00am - 10:00am",
    title: "Registration & Networking Breakfast, Opening Remarks – AI CXO Summit",
@@ -140,7 +140,7 @@ function EventCard({ event }) {
 }
 
 export default function EventsPlanned() {
-  const [activeDay, setActiveDay] = useState("Day 1");
+  const [activeDay, setActiveDay] = useState("24th OCT");
 
   return (
     <div className="px-4 py-32 relative bg-gradient-to-b from-[#25123D] to-[#1B0E2C] text-white font-sans">

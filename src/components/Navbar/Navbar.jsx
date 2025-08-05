@@ -34,11 +34,11 @@ useEffect(() => {
     <div className="w-full sticky top-0 z-50 flex flex-col">
      
       <div className="flex flex-wrap items-center justify-center md:justify-start py-2 text-white gap-4 md:gap-5 px-4 md:px-20 bg-gradient-to-r from-[#7356CB] via-[#835ACB] to-[#9E4CC9]">
-        <a href="/event-detail" target='_blank' className={`mosserate text-lg md:text-lg font-extrabold ${Quatar ? 'text-[#58fff7]' : ''}`}>QATAR</a>
+        <a href="/qatar" target='_blank' className={`mosserate text-lg md:text-lg font-extrabold animate-pulse hover:animate-none hover:text-[#58fff7] transition-colors duration-300  ${Quatar ? 'text-[#58fff7]' : ''}`}>QATAR</a>
         <img src={Sparkel} alt="" className="h-4 w-4" />
-        <a href="#" className="mosserate text-lg md:text-lg font-extrabold">OMAN</a>
+        <a href="/oman" className="mosserate text-lg md:text-lg font-extrabold">OMAN</a>
         <img src={Sparkel} alt="" className="h-4 w-4" />
-        <a href="#" className="mosserate text-lg md:text-lg font-extrabold">KSA</a>
+        <a href="/ksa" className="mosserate text-lg md:text-lg font-extrabold">KSA</a>
       </div>
 
    
@@ -46,7 +46,7 @@ useEffect(() => {
         
       <div className='flex  items-center gap-4 justify-center'>
             <a href="/" target='_blank'><img src={Ai} alt="Logo" className="h-12 md:h-16" /></a>
-            |
+           <a href="/" target='_blank'>|</a>
             <a href="/" target='_blank'><img src={Hack} alt="Logo" className="h-12 md:h-16" /></a>
             <a className=' text-[11px]   ' href="https://risin.ventures/" target="_blank">Powered by <br /> <u className='font-bold text-gray-200'>Risin Ventures</u></a>
             </div>
@@ -61,8 +61,8 @@ useEffect(() => {
         
         <div className="hidden xl:flex gap-6 items-center justify">
           <a className='cursor-pointer' href='#about'>About</a>
-          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a>
-          <a href="#Participate">Who can participate?</a>
+          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>Program</a>
+          <a href="#Participate">Participation</a>
           <a href="#Experts">Experts</a>
           <a href="#Partners">Partners</a>
           <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'FAQ')}>FAQs</a>
@@ -83,8 +83,8 @@ useEffect(() => {
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 px-4 py-4 bg-[#1D1536] text-white xl:hidden">
           <a onClick={() => setMenuOpen(false)} href="#about">About</a>
-          <a onClick={() => setMenuOpen(false)} href="#spotlight">AI Spotlight</a>
-          <a onClick={() => setMenuOpen(false)} href="#Participate">Who can participate?</a>
+          <a onClick={() => setMenuOpen(false)} href="#spotlight">Program</a>
+          <a onClick={() => setMenuOpen(false)} href="#Participate">Participation</a>
           <a onClick={() => setMenuOpen(false)} href="#Experts">Experts</a>
           <a onClick={() => setMenuOpen(false)} href="#Partners">Partners</a>
           <a onClick={() => setMenuOpen(false)} href="#FAQ">FAQs</a>

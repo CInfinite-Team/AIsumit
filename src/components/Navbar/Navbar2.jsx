@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import Sparkel from '../../assets/Sparkel.svg';
 import Ai from '../../assets/ai.svg'
 import Hack from '../../assets/hack.svg'
@@ -21,11 +21,11 @@ useEffect(() => {
     <div className="w-full sticky top-0 z-50 flex flex-col">
      
       <div className="flex flex-wrap items-center justify-center md:justify-start py-2 text-white gap-4 md:gap-5 px-4 md:px-20 bg-gradient-to-r from-[#7356CB] via-[#835ACB] to-[#9E4CC9]">
-        <a href="/event-detail" target='_blank' className={`mosserate text-lg md:text-lg font-extrabold ${Quatar ? 'text-[#58fff7]' : ''}`}>QATAR</a>
+        <a href="/qatar" target='_blank' className={`mosserate text-lg md:text-lg font-extrabold ${Quatar ? 'text-[#58fff7]' : ''}`}>QATAR</a>
         <img src={Sparkel} alt="" className="h-4 w-4" />
-        <a href="#" className="mosserate text-lg md:text-lg font-extrabold">OMAN</a>
+        <a href="/oman" className="mosserate text-lg md:text-lg font-extrabold">OMAN</a>
         <img src={Sparkel} alt="" className="h-4 w-4" />
-        <a href="#" className="mosserate text-lg md:text-lg font-extrabold">KSA</a>
+        <a href="/ksa" className="mosserate text-lg md:text-lg font-extrabold">KSA</a>
       </div>
 
    
@@ -49,7 +49,7 @@ useEffect(() => {
         
         <div className="hidden xl:flex gap-6 items-center justify">
           <a className='cursor-pointer' href='#Agenda'>Agenda</a>
-          <a href="#pricing">Why Attend AI Summit?</a>
+          <a href="#pricing">Join AI Summit</a>
           <a href="#Experts">Our Speakers</a>
           
           
@@ -69,7 +69,7 @@ useEffect(() => {
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 px-4 py-4 bg-[#1D1536] text-white xl:hidden">
           <a onClick={() => setMenuOpen(false)} href="#Agenda">Agenda</a>
-          <a onClick={() => setMenuOpen(false)} href="#pricing">Why Attend AI Summit?</a>
+          <a onClick={() => setMenuOpen(false)} href="#pricing">Join AI Summit</a>
           <a onClick={() => setMenuOpen(false)} href="#Experts">Our Speakers</a>
           <a onClick={() => setMenuOpen(false)} href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
             <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">

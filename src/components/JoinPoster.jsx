@@ -1,5 +1,6 @@
 import React from 'react';
-import JoinPosterImg from '../assets/JoinPoster.svg';
+// import JoinPosterImg from '../assets/JoinPoster.svg';
+import JoinPosterImg from '../assets/bg.png';
 import { useInView } from 'react-intersection-observer';
 
 const JoinPoster = () => {
@@ -11,35 +12,22 @@ const JoinPoster = () => {
   return (
     <div
       ref={ref}
-      className={`bg-[#2a2344] w-full flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 
+      className={`bg-[#2a2344] w-full flex items-center justify-center py-16 px-0 sm:px-6 lg:px-8 
         transition-all duration-1000 ease-out
         ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}
     >
-      <div className=" w-[900px] xl:w-[1000px] max-w-8xl mx-auto">
-        <div className="relative rounded-[28px] overflow-hidden min-h-[450px]">
+      <div className=" w-[900px] xl:w-[1000px] md:max-w-8xl mx-auto">
+        <div className="relative rounded-[28px] overflow-hidden md:min-h-[450px]">
           {/* <div className="absolute bg-gray-50 w-52 hidden lg:block h-52 left-0 top-0" /> */}
-<div className="absolute border-l border-t border-gray-500 w-52 h-52 hidden lg:block left-0 top-0 rounded-tl-[28px] z-20" />
 
-          {/* SVG Border Shape */}
-          <svg
-            viewBox="0 0 1440 580"
-            className="w-full h-full md:h-auto hidden lg:block md:w-[900px]  xl:w-[1000px] absolute top-0 left-0 z-0 pointer-events-none"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M24 1H1332.24C1345.64 1 1358.4 6.72115 1367.32 16.7246L1397.09 50.1201L1428.45 88.6455C1435.27 97.0284 1439 107.507 1439 118.316V556C1439 568.703 1428.7 579 1416 579H24C11.2975 579 1 568.703 1 556V24C1.00001 11.2975 11.2975 1 24 1Z"
-              fill="#2B204C"
-              stroke="gray"
-              strokeWidth="2"
-            />
-          </svg>
+        
 
           {/* Background Image */}
           <img
             src={JoinPosterImg}
             alt="AI Poster Background"
-            className="absolute inset-0 w-full h-full object-right rounded-3xl lg:h-auto md:w-[1000px] p-4 object-cover z-0"
+            className="absolute inset-0 w-full h-full object-right rounded-3xl lg:h-auto md:w-[1000px] p-4 object-fill z-0"
           />
 
           {/* Content */}

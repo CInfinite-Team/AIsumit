@@ -7,6 +7,9 @@ import Mail from '../assets/mail.svg';
 import globe from '../assets/globeico.svg';
 import locationico from '../assets/location.svg';
 import { useLocation } from 'react-router-dom';
+import instagram from '../assets/instagram.svg';
+import Linkedin  from '../assets/Linkedin.svg';
+import Youtube  from '../assets/Youtube.svg';
 
 const Footer = () => {
   const location = useLocation();
@@ -85,7 +88,7 @@ const Footer = () => {
             <h3 className="font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="hover:text-white inter transition-colors">About</a></li>
-              <li><a className='cursor-pointer transition-colors hover:text-white inter' onClick={(e) => handlenavigation(e, 'spotlight')}>AI Spotlight</a></li>
+              <li><a className='cursor-pointer transition-colors hover:text-white inter' onClick={(e) => handlenavigation(e, 'spotlight')}>Program</a></li>
               <li><a href="#Participate" className="hover:text-white inter transition-colors">Who can participate?</a></li>
               <li><a href="#Experts" className="hover:text-white inter transition-colors">Experts</a></li>
               <li><a href="#Partners" className="hover:text-white inter transition-colors">Partners</a></li>
@@ -117,28 +120,33 @@ const Footer = () => {
           </div>
 
           {/* Section 4: Newsletter */}
-          <div>
-            <h3 className="font-bold text-white mb-4">Join Our Newsletter</h3>
-            <div className="flex border items-center justify-between pr-2 bg-white/10 border-white/20 rounded-lg overflow-hidden w-fit text-sm focus:outline-none focus:border-pink-500">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter Email"
-                className="bg-transparent focus:outline-none pl-4 w-[55%] py-3 rounded-l-lg"
-              />
-              <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden">
-                <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
-                <button
-                  className="relative px-6 py-2 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-xs z-10"
-                  style={{ zIndex: 2 }}
-                  onClick={handleNewsletterSubmit}
-                >
-                  Notify me
-                </button>
-              </div>
-            </div>
-          </div>
+          <div className='flex flex-col gap-5 '>
+                     <h3 className="font-bold text-white mb-4">Join Our Newsletter</h3>
+                     <div className="flex border items-center justify-between pr-2 bg-white/10 border-white/20 rounded-lg overflow-hidden w-fit text-sm focus:outline-none focus:border-pink-500">
+                       <input
+                         type="email"
+                         value={email}
+                         onChange={(e) => setEmail(e.target.value)}
+                         placeholder="Enter Email"
+                         className="bg-transparent focus:outline-none pl-4 w-[55%] py-3 rounded-l-lg"
+                       />
+                       <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden">
+                         <div className="absolute inset-0 group-hover:w-[200%] group-hover:h-96 group-hover:-left-[70%] group-hover:-top-[210%] rounded-md group-hover:rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 shadow-[0px_16px_40px_0px_rgba(236,72,153,0.5)] transition-transform duration-700 group-hover:animate-spin pointer-events-none" style={{ zIndex: 1 }} />
+                         <button
+                           onClick={handleNewsletterSubmit}
+                           className="relative px-6 py-2 rounded-md transition-colors duration-300 hover:bg-[#3c3357] bg-[#2B204C] text-white font-semibold text-xs z-10"
+                           style={{ zIndex: 2 }}
+                         >
+                           Notify me
+                         </button>
+                       </div>
+                     </div>
+                         <div className='flex gap-4 items-center'>
+                          <a href="https://www.instagram.com/risin.ventures/ " target="_blank"> <img src={instagram} className='w-8' alt="instagram" /></a>
+                         <a href="https://www.linkedin.com/company/risin-ventures/" target='_blank'>  <img src={Linkedin} className='w-5' alt="Linkedin" /></a>
+                          <a href="https://www.youtube.com/channel/UC2PZRHE-2nvkqRZPTPK9wNQ/featured" target='_blank'> <img src={Youtube} className='w-7' alt="Youtube" /></a>
+                         </div>
+                   </div>
         </div>
 
         {/* Bottom footer bar */}
