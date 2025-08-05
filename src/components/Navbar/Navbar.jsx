@@ -61,7 +61,7 @@ useEffect(() => {
         
         <div className="hidden xl:flex gap-6 items-center justify">
           <a className='cursor-pointer' href='#about'>About</a>
-          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>AI Spotlight</a>
+          <a className='cursor-pointer' onClick={(e)=>handlenavigation(e,'spotlight')}>Program</a>
           <a href="#Participate">Participation</a>
           <a href="#Experts">Experts</a>
           <a href="#Partners">Partners</a>
@@ -83,7 +83,7 @@ useEffect(() => {
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 px-4 py-4 bg-[#1D1536] text-white xl:hidden">
           <a onClick={() => setMenuOpen(false)} href="#about">About</a>
-          <a onClick={() => setMenuOpen(false)} href="#spotlight">AI Spotlight</a>
+          <a onClick={() => setMenuOpen(false)} href="#spotlight">Program</a>
           <a onClick={() => setMenuOpen(false)} href="#Participate">Participation</a>
           <a onClick={() => setMenuOpen(false)} href="#Experts">Experts</a>
           <a onClick={() => setMenuOpen(false)} href="#Partners">Partners</a>

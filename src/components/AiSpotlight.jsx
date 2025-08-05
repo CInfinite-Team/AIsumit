@@ -80,9 +80,11 @@ export default function AiSpotlight() {
       }`}
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl text-center  font-bold mb-4">Benefits</h2>
+        <h2 className="text-3xl md:text-4xl text-center  font-bold mb-4">Program Spotlight</h2>
         <p className="text-md mb-12 text-gray-300 inter max-w-4xl mx-auto">
-        PERKS OF JOINING
+        The Al Summit | Al Hack isn't just about building incredible solutions—it's your gateway to growth, recognition, and real-
+world impact. Here's what you stand to gain by participating:
+
         </p>
 
         {/* Desktop Cards */}

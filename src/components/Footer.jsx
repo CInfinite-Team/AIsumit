@@ -88,7 +88,7 @@ const Footer = () => {
             <h3 className="font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="hover:text-white inter transition-colors">About</a></li>
-              <li><a className='cursor-pointer transition-colors hover:text-white inter' onClick={(e) => handlenavigation(e, 'spotlight')}>AI Spotlight</a></li>
+              <li><a className='cursor-pointer transition-colors hover:text-white inter' onClick={(e) => handlenavigation(e, 'spotlight')}>Program</a></li>
               <li><a href="#Participate" className="hover:text-white inter transition-colors">Who can participate?</a></li>
               <li><a href="#Experts" className="hover:text-white inter transition-colors">Experts</a></li>
               <li><a href="#Partners" className="hover:text-white inter transition-colors">Partners</a></li>

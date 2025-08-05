@@ -49,7 +49,7 @@ useEffect(() => {
         
         <div className="hidden xl:flex gap-6 items-center justify">
           <a className='cursor-pointer' href='#Agenda'>Agenda</a>
-          <a href="#pricing">Why Attend AI Summit?</a>
+          <a href="#pricing">Join AI Summit</a>
           <a href="#Experts">Our Speakers</a>
           
           
@@ -69,7 +69,7 @@ useEffect(() => {
       {menuOpen && (
         <div className="flex flex-col items-center gap-4 px-4 py-4 bg-[#1D1536] text-white xl:hidden">
           <a onClick={() => setMenuOpen(false)} href="#Agenda">Agenda</a>
-          <a onClick={() => setMenuOpen(false)} href="#pricing">Why Attend AI Summit?</a>
+          <a onClick={() => setMenuOpen(false)} href="#pricing">Join AI Summit</a>
           <a onClick={() => setMenuOpen(false)} href="#Experts">Our Speakers</a>
           <a onClick={() => setMenuOpen(false)} href="https://forms.gle/QdQturFqbxXnkNa89" target="_blank" rel="noopener noreferrer">
             <div className="relative w-fit group rounded-md p-[2px] hover:overflow-hidden ">

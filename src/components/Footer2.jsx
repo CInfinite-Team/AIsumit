@@ -78,7 +78,8 @@ const Footer = () => {
             <h3 className="font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a className="hover:text-white inter transition-colors" href="#Agenda">Agenda</a></li>
-              <li><a className="hover:text-white inter transition-colors" href="#pricing">Why Attend AI Summit?</a></li>
+              <li><a className="hover:text-white inter transition-colors" href="#pricing">Join AI Summit</a></li>
+              <li><a className="hover:text-white inter transition-colors" href="#hackathon">Join Hackathon</a></li>
               <li><a href="#Experts" className="hover:text-white inter transition-colors">Our Speakers</a></li>
             </ul>
           </div>

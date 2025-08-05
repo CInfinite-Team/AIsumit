@@ -74,7 +74,7 @@ const [isQATAR, setIsQATAR] = useState(false);
         {/* Subheading */}
 
         <p className={` ${isQATAR ? 'opacity-100 ' : 'opacity-0 '} font-medium text-xs md:text-xl text-center lg:text-left transition-opacity duration-1000 delay-[200ms]`}>
-          QATAR | 25TH - 27TH OCTOBER | QSTP, DOHA
+          QATAR | 24TH - 26TH OCTOBER | QSTP, DOHA
         </p>
 
         {/* Heading */}
